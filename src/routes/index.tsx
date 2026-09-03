@@ -4,6 +4,12 @@ import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
+import mes5CinderelaMarina from "@/assets/mes-5-cinderela-marina.png.asset.json";
+import mes6FrutasMiguel from "@/assets/mes-6-frutas-miguel.png.asset.json";
+import mes7ParabensAmor from "@/assets/mes-7-parabens-amor.png.asset.json";
+import mes8SolBella from "@/assets/mes-8-sol-bella.png.asset.json";
+import mes9Superpoderosa from "@/assets/mes-9-superpoderosa.png.asset.json";
+import mes11BarcoHeitor from "@/assets/mes-11-barco-heitor.webp.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -130,38 +136,38 @@ const MONTHS = [
   },
   {
     n: 5,
-    tema: "Fundo do mar",
-    img: "/images/depoimento-natalia.webp",
-    alt: "Bolo de mesversário com detalhes coloridos",
-    emoji: "🐠",
+    tema: "Cinderela",
+    img: mes5CinderelaMarina.url,
+    alt: "Bolo do quinto mês decorado com o tema Cinderela e nome Marina",
+    emoji: "👗",
   },
   {
     n: 6,
-    tema: "Mundo dos dinos",
-    img: "/images/depoimento-kethelin-18.webp",
-    alt: "Bolo com dinossauro desenhado à mão",
-    emoji: "🦖",
+    tema: "Frutinhas",
+    img: mes6FrutasMiguel.url,
+    alt: "Bolo do sexto mês decorado com frutinhas coloridas e nome Miguel",
+    emoji: "🥑",
   },
   {
     n: 7,
-    tema: "Circo colorido",
-    img: "/images/paodemel-1.webp",
-    alt: "Doces artesanais coloridos para a mesa",
-    emoji: "🎪",
+    tema: "Amor em festa",
+    img: mes7ParabensAmor.url,
+    alt: "Bolo do sétimo mês decorado com bichinho segurando bolo e frase Parabéns amo você",
+    emoji: "🎉",
   },
   {
     n: 8,
-    tema: "Fazendinha",
-    img: "/images/brownie-2.webp",
-    alt: "Brownies decorados para o mesversário",
-    emoji: "🐮",
+    tema: "Sol e diversão",
+    img: mes8SolBella.url,
+    alt: "Bolo do oitavo mês decorado com sol sorridente e nome Bella",
+    emoji: "☀️",
   },
   {
     n: 9,
-    tema: "Chuva de amor",
-    img: "/images/docinho-1.webp",
-    alt: "Docinhos artesanais para completar a mesa",
-    emoji: "💗",
+    tema: "Menina Superpoderosa",
+    img: mes9Superpoderosa.url,
+    alt: "Bolo do nono mês decorado com tema Menina Superpoderosa",
+    emoji: "💚",
   },
   {
     n: 10,
@@ -172,10 +178,10 @@ const MONTHS = [
   },
   {
     n: 11,
-    tema: "Bailarina",
-    img: "/images/depoimento-suellen-21.webp",
-    alt: "Bolo de bailarina com flores em chantilly",
-    emoji: "🩰",
+    tema: "Marinheiro",
+    img: mes11BarcoHeitor.url,
+    alt: "Bolo do décimo primeiro mês decorado com barquinho e nome Heitor",
+    emoji: "⛵",
   },
   {
     n: 12,
