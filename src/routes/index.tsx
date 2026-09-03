@@ -311,9 +311,9 @@ function Index() {
                   className="h-[420px] w-full rounded-[1.6rem] object-cover md:h-[520px]"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-4 w-56 -rotate-3 rounded-2xl bg-plum p-4 text-cream shadow-xl md:-left-10">
+              <div className="absolute -bottom-8 -left-2 w-60 -rotate-3 rounded-2xl bg-plum px-5 py-4 text-cream shadow-xl md:-left-10">
                 <p className="font-script text-2xl leading-none">1 mês!</p>
-                <p className="mt-2 text-xs text-cream/80">
+                <p className="mt-2 text-xs leading-relaxed text-cream/80">
                   O detalhe que faltava no álbum do seu bebê.
                 </p>
               </div>
