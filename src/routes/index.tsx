@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
+import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
+import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -107,16 +109,16 @@ const MONTHS = [
   },
   {
     n: 2,
-    tema: "Ursinho fofo",
-    img: "/images/bolo-1.webp",
-    alt: "Bolo temático de mesversário decorado à mão",
+    tema: "Poderoso Nenezinho",
+    img: mes2PoderosoNenezinho.url,
+    alt: "Bolo do segundo mês decorado com o tema Poderoso Nenezinho",
     emoji: "🧸",
   },
   {
     n: 3,
-    tema: "Jardim encantado",
-    img: "/images/minibolo-2.webp",
-    alt: "Mini bolo decorado para mesversário",
+    tema: "Cinderela",
+    img: mes3RafaelaCinderela.url,
+    alt: "Bolo do terceiro mês decorado com o tema Cinderela e nome Rafaela",
     emoji: "🌷",
   },
   {
