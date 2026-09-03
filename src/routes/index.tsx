@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -379,7 +380,7 @@ function Index() {
 
       <main id="top">
         {/* HERO */}
-        <section className="dotted-bg relative overflow-hidden py-16 md:py-24">
+        <section className="relative overflow-hidden py-16 md:py-24">
           <div className="section-shell relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="relative">
               <span className="inline-flex -rotate-2 items-center gap-2 rounded-full border-2 border-navy bg-cream px-4 py-2 text-xs font-bold tracking-wide">
@@ -446,15 +447,15 @@ function Index() {
                 style={{ ["--tilt" as string]: "2deg" }}
               >
                 <img
-                  src="/images/depoimento-kethelin-18.webp"
-                  alt="Bolo de mesversário decorado à mão com tema de dinossauro"
+                  src={heroMesversario.url}
+                  alt="Bolo de mesversário artesanal decorado com flores e nome do bebê"
                   className="h-[380px] w-full rounded-[1.4rem] object-cover md:h-[460px]"
                 />
               </div>
               <div className="animate-wiggle absolute -top-8 -right-4 flex size-24 flex-col items-center justify-center rounded-full border-2 border-navy bg-caramel text-navy shadow-[6px_6px_0_0_var(--navy)]">
-                <span className="font-script text-3xl leading-none">1 mês</span>
+                <span className="font-script text-3xl leading-none">4 Meses</span>
                 <span className="text-[10px] font-bold tracking-wider uppercase">
-                  já?!
+                  JÁ?!
                 </span>
               </div>
               <div className="absolute -bottom-8 -left-4 w-56 -rotate-3 rounded-2xl border-2 border-navy bg-plum px-5 py-4 text-cream shadow-[6px_6px_0_0_var(--navy)]">
@@ -736,7 +737,7 @@ function Index() {
         {/* CTA FINAL */}
         <section id="contato" className="pb-24">
           <div className="section-shell">
-            <div className="dotted-bg relative overflow-hidden rounded-[2.5rem] border-2 border-navy bg-caramel p-10 text-center shadow-[12px_12px_0_0_var(--navy)] md:p-16">
+            <div className="relative overflow-hidden rounded-[2.5rem] border-2 border-navy bg-caramel p-10 text-center shadow-[12px_12px_0_0_var(--navy)] md:p-16">
               <span className="font-script text-3xl text-plum">psiu, mamãe!</span>
               <h2 className="mt-3 text-4xl font-bold md:text-5xl">
                 Qual será o tema do próximo mês do seu bebê?
