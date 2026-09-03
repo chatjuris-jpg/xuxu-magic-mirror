@@ -198,6 +198,38 @@
   animation: marquee 32s linear infinite;
 }
 
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0) rotate(var(--tilt, 0deg)); }
+  50% { transform: translateY(-10px) rotate(var(--tilt, 0deg)); }
+}
+
+@utility animate-float {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2.5deg); }
+}
+
+@utility animate-wiggle {
+  animation: wiggle 3.2s ease-in-out infinite;
+}
+
+@utility sticker {
+  box-shadow: 0 0 0 3px var(--navy), 8px 8px 0 0 var(--navy);
+}
+
+@utility sticker-soft {
+  box-shadow: 6px 6px 0 0 color-mix(in oklab, var(--navy) 18%, transparent);
+}
+
+@utility dotted-bg {
+  background-image: radial-gradient(color-mix(in oklab, var(--plum) 22%, transparent) 2px, transparent 2px);
+  background-size: 22px 22px;
+}
+
+
 @layer base {
   html {
     scroll-behavior: smooth;
