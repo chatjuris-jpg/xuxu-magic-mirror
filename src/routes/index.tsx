@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
+import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
+import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
