@@ -109,16 +109,16 @@ const MONTHS = [
   },
   {
     n: 2,
-    tema: "Ursinho fofo",
-    img: "/images/bolo-1.webp",
-    alt: "Bolo temático de mesversário decorado à mão",
+    tema: "Poderoso Nenezinho",
+    img: mes2PoderosoNenezinho.url,
+    alt: "Bolo do segundo mês decorado com o tema Poderoso Nenezinho",
     emoji: "🧸",
   },
   {
     n: 3,
-    tema: "Jardim encantado",
-    img: "/images/minibolo-2.webp",
-    alt: "Mini bolo decorado para mesversário",
+    tema: "Cinderela",
+    img: mes3RafaelaCinderela.url,
+    alt: "Bolo do terceiro mês decorado com o tema Cinderela e nome Rafaela",
     emoji: "🌷",
   },
   {
