@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
+import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -100,8 +101,8 @@ const MONTHS = [
   {
     n: 1,
     tema: "Nuvem de algodão",
-    img: "/images/bento-3.webp",
-    alt: "Bentô cake decorado para o primeiro mês",
+    img: mes1BrancaDeNeve.url,
+    alt: "Bolo do primeiro mês decorado com tema Branca de Neve e nome Manuela",
     emoji: "☁️",
   },
   {
