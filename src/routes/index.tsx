@@ -181,16 +181,16 @@ const MONTHS = [
   {
     n: 11,
     tema: "Marinheiro",
-    img: mes11BarcoHeitor.url,
+    img: mes11BarcoHeitorNovo.url,
     alt: "Bolo do décimo primeiro mês decorado com barquinho e nome Heitor",
     emoji: "⛵",
   },
   {
     n: 12,
-    tema: "Festa de 1 aninho",
-    img: "/images/hero-cupcake.webp",
-    alt: "Bolo e cupcakes para a festa de um ano",
-    emoji: "🎂",
+    tema: "Astronauta",
+    img: mes12AstronautaGabriel.url,
+    alt: "Bolo do décimo segundo mês decorado com tema Astronauta e nome Gabriel",
+    emoji: "🚀",
   },
 ];
 
