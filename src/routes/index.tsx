@@ -215,22 +215,11 @@ const BENEFITS = [
   },
 ];
 
-const POLAROIDS = [
-  { img: "/images/bento-3.webp", cap: "1º mês", alt: "Bentô cake do primeiro mês" },
-  { img: "/images/bolo-1.webp", cap: "3º mês", alt: "Bolo temático decorado à mão" },
-  { img: "/images/minibolo-2.webp", cap: "5º mês", alt: "Mini bolo de mesversário" },
-  { img: "/images/cupcake-3.webp", cap: "7º mês", alt: "Cupcakes decorados" },
-  {
-    img: "/images/depoimento-kethelin-18.webp",
-    cap: "9º mês",
-    alt: "Bolo com dinossauro desenhado à mão",
-  },
-  {
-    img: "/images/depoimento-suellen-21.webp",
-    cap: "11º mês",
-    alt: "Bolo de bailarina com flores em chantilly",
-  },
-];
+const POLAROIDS = MONTHS.map((m) => ({
+  img: m.img,
+  cap: `${m.n}º mês · ${m.tema}`,
+  alt: m.alt,
+}));
 
 const STEPS = [
   {
