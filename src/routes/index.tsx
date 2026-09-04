@@ -4,11 +4,12 @@ import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
-import mes5CinderelaMarina from "@/assets/mes-5-cinderela-marina.png.asset.json";
-import mes6FrutasMiguel from "@/assets/mes-6-frutas-miguel.png.asset.json";
-import mes7ParabensAmor from "@/assets/mes-7-parabens-amor.png.asset.json";
-import mes8SolBella from "@/assets/mes-8-sol-bella.png.asset.json";
-import mes9Superpoderosa from "@/assets/mes-9-superpoderosa.png.asset.json";
+import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
+import mes5PoderosoMiguel from "@/assets/mes-5-poderoso-miguel.png.asset.json";
+import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
+import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
+import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
+import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
 import mes11BarcoHeitor from "@/assets/mes-11-barco-heitor.webp.asset.json";
 import {
   MessageCircle,
