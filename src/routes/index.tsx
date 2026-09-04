@@ -4,11 +4,12 @@ import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
-import mes5CinderelaMarina from "@/assets/mes-5-cinderela-marina.png.asset.json";
-import mes6FrutasMiguel from "@/assets/mes-6-frutas-miguel.png.asset.json";
-import mes7ParabensAmor from "@/assets/mes-7-parabens-amor.png.asset.json";
-import mes8SolBella from "@/assets/mes-8-sol-bella.png.asset.json";
-import mes9Superpoderosa from "@/assets/mes-9-superpoderosa.png.asset.json";
+import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
+import mes5PoderosoMiguel from "@/assets/mes-5-poderoso-miguel.png.asset.json";
+import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
+import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
+import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
+import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
 import mes11BarcoHeitor from "@/assets/mes-11-barco-heitor.webp.asset.json";
 import {
   MessageCircle,
@@ -129,43 +130,43 @@ const MONTHS = [
   },
   {
     n: 4,
-    tema: "Balõezinhos",
-    img: "/images/cupcake-3.webp",
-    alt: "Cupcakes decorados para a mesa do mesversário",
-    emoji: "🎈",
+    tema: "Pool Party",
+    img: mes4PoolFilipe.url,
+    alt: "Bolo do quarto mês decorado com tema Pool Party e nome Filipe",
+    emoji: "🏖️",
   },
   {
     n: 5,
-    tema: "Cinderela",
-    img: mes5CinderelaMarina.url,
-    alt: "Bolo do quinto mês decorado com o tema Cinderela e nome Marina",
-    emoji: "👗",
+    tema: "O Poderoso Miguel",
+    img: mes5PoderosoMiguel.url,
+    alt: "Bolo do quinto mês decorado com tema O Poderoso Miguel",
+    emoji: "👔",
   },
   {
     n: 6,
     tema: "Frutinhas",
-    img: mes6FrutasMiguel.url,
+    img: mes6FrutasMiguelNovo.url,
     alt: "Bolo do sexto mês decorado com frutinhas coloridas e nome Miguel",
     emoji: "🥑",
   },
   {
     n: 7,
-    tema: "Amor em festa",
-    img: mes7ParabensAmor.url,
-    alt: "Bolo do sétimo mês decorado com bichinho segurando bolo e frase Parabéns amo você",
-    emoji: "🎉",
+    tema: "Natal",
+    img: mes7NatalRafaela.url,
+    alt: "Bolo do sétimo mês decorado com tema Natal e nome Rafaela",
+    emoji: "🎄",
   },
   {
     n: 8,
     tema: "Sol e diversão",
-    img: mes8SolBella.url,
+    img: mes8SolBellaNovo.url,
     alt: "Bolo do oitavo mês decorado com sol sorridente e nome Bella",
     emoji: "☀️",
   },
   {
     n: 9,
     tema: "Menina Superpoderosa",
-    img: mes9Superpoderosa.url,
+    img: mes9SuperpoderosaNovo.url,
     alt: "Bolo do nono mês decorado com tema Menina Superpoderosa",
     emoji: "💚",
   },
