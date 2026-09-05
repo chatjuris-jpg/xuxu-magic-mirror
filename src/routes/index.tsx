@@ -448,7 +448,7 @@ function Index() {
               >
                 <img
                   src={heroMesversario.url}
-                  alt="Bolo de mesversário artesanal decorado com flores e nome do bebê"
+                  alt="Bolo de mesversário artesanal decorado com tema Minion e nome Oliver"
                   className="h-[380px] w-full rounded-[1.4rem] object-cover md:h-[460px]"
                 />
               </div>
