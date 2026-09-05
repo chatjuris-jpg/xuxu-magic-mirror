@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
-import mes1BrancaDeNeve from "@/assets/mes-1-branca-de-neve.png.asset.json";
+import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
 import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
@@ -111,10 +111,10 @@ const NAV = [
 const MONTHS = [
   {
     n: 1,
-    tema: "Nuvem de algodão",
-    img: mes1BrancaDeNeve.url,
-    alt: "Bolo do primeiro mês decorado com tema Branca de Neve e nome Manuela",
-    emoji: "☁️",
+    tema: "Homem-Aranha",
+    img: mes1HomemAranhaDante.url,
+    alt: "Bolo do primeiro mês decorado com tema Homem-Aranha e nome Dante",
+    emoji: "🕷️",
   },
   {
     n: 2,
