@@ -501,7 +501,7 @@ function Index() {
                 src={atual.img}
                 alt={atual.alt}
                 loading="lazy"
-                className="h-64 w-full rounded-[1.5rem] border-2 border-navy object-cover md:h-72"
+                className="aspect-square w-full rounded-[1.5rem] border-2 border-navy object-cover"
               />
               <div>
                 <span className="text-4xl">{atual.emoji}</span>
