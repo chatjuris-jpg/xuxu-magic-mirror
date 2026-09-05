@@ -10,6 +10,7 @@ import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.js
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
 import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
 import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
+import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
 import {
@@ -173,10 +174,10 @@ const MONTHS = [
   },
   {
     n: 10,
-    tema: "Arco-íris",
-    img: "/images/outros-4.webp",
-    alt: "Bolo colorido para mesversário",
-    emoji: "🌈",
+    tema: "Minions",
+    img: mes10MinionOliver.url,
+    alt: "Bolo do décimo mês decorado com tema Minion e nome Oliver",
+    emoji: "🍌",
   },
   {
     n: 11,
