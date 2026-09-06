@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
@@ -302,7 +302,6 @@ const artCha = (
     <div className="flex h-24 w-40 items-center justify-center rounded-2xl border-2 border-navy bg-cream">
       <p className="font-script text-2xl" style={{ color: "#6FA8C9" }}>
         chá do bebê
-仅此而已
       </p>
     </div>
     <div className="mx-auto h-3 w-44 rounded-b-xl border-2 border-navy bg-caramel" />
