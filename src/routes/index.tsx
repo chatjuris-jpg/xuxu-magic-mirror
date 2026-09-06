@@ -378,6 +378,13 @@ const PRODUCTS: Product[] = [
     title: "Chá de Fraldas / Chá de Bebê",
     desc: "Uma mesa doce para celebrar a espera: criamos bolos, cupcakes e detalhes personalizados para o seu chá.",
     bg: "#D3E8F5",
+    imgs: [
+      chaFraldasBoloPersonalizado.url,
+      chaBebeBoloUrsinho.url,
+      chaBebeBoloDecorado.url,
+      chaBebeBoloFlores.url,
+    ],
+    alt: "Bolo de chá de fraldas e chá de bebê decorado e personalizado",
   },
   {
     title: "Infantil",
