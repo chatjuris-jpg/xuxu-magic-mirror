@@ -46,6 +46,11 @@ import smashCakeNakedFlowers from "@/assets/smash-cake-naked-flowers.jpg.asset.j
 import smashCakeCarros from "@/assets/smash-cake-carros.jpg.asset.json";
 import smashCakeColorido from "@/assets/smash-cake-colorido.jpg.asset.json";
 import smashCakeAzulAmarelo from "@/assets/smash-cake-azul-amarelo.jpg.asset.json";
+import vintageCakePersonalizado from "@/assets/vintage-cake-personalizado.jpg.asset.json";
+import vintageCake1Mes from "@/assets/vintage-cake-1-mes.jpg.asset.json";
+import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
+import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
+import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
