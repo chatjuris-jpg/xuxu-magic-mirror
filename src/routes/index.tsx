@@ -631,7 +631,7 @@ function Index() {
                 />
               </div>
               <div className="animate-wiggle absolute -top-8 -right-4 flex size-24 flex-col items-center justify-center rounded-full border-2 border-navy bg-caramel text-navy shadow-[6px_6px_0_0_var(--navy)]">
-                <span className="font-script text-3xl leading-none">4 Meses</span>
+                <span className="font-script text-3xl leading-none">10 Meses</span>
                 <span className="text-[10px] font-bold tracking-wider uppercase">
                   JÁ?!
                 </span>
