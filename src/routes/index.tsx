@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
@@ -13,6 +13,11 @@ import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.j
 import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
+import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
+import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
+import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
+import batizado4 from "@/assets/bolo_decorado_para_batizado_primeira_comunhao.jpg.asset.json";
+import batizado5 from "@/assets/batizado_bolo.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -338,6 +343,7 @@ type Product = {
   desc: string;
   bg: string;
   img?: string;
+  imgs?: string[];
   alt?: string;
 };
 
@@ -376,6 +382,14 @@ const PRODUCTS: Product[] = [
     title: "Batizado e 1ª Comunhão",
     desc: "Bolos e doces delicados para momentos de fé e celebração em família, com decoração elegante e singela.",
     bg: "#E8E4F3",
+    imgs: [
+      batizado1.url,
+      batizado2.url,
+      batizado3.url,
+      batizado4.url,
+      batizado5.url,
+    ],
+    alt: "Bolo de batizado e primeira comunhão decorado",
   },
   {
     title: "Vintage Cake",
@@ -394,7 +408,55 @@ const PRODUCTS: Product[] = [
   },
 ];
 
+function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(
+      () => setIndex((i) => (i + 1) % imgs.length),
+      3000,
+    );
+    return () => clearInterval(timer);
+  }, [imgs.length]);
+
+  return (
+    <div className="relative h-full w-full overflow-hidden">
+      <div
+        className="flex h-full transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${index * 100}%)` }}
+      >
+        {imgs.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt={`${alt} — foto ${i + 1}`}
+            loading="lazy"
+            className="h-full w-full shrink-0 object-cover"
+          />
+        ))}
+      </div>
+      <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+        {imgs.map((src, i) => (
+          <button
+            key={src}
+            type="button"
+            aria-label={`Ver foto ${i + 1}`}
+            onClick={() => setIndex(i)}
+            className={`size-2.5 rounded-full border border-navy transition-colors ${
+              i === index ? "bg-navy" : "bg-card/70"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function ProductFigure({ p }: { p: Product }) {
+  if (p.imgs && p.imgs.length > 0) {
+    return <ProductCarousel imgs={p.imgs} alt={p.alt || p.title} />;
+  }
+
   if (p.img) {
     return (
       <img
