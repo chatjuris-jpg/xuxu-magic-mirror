@@ -459,6 +459,14 @@ const PRODUCTS: Product[] = [
     title: "Vintage Cake",
     desc: "Estilo clássico e elegante, com acabamento liso, flores e cores suaves para qualquer ocasião especial.",
     bg: "#F5DF9E",
+    imgs: [
+      vintageCakePersonalizado.url,
+      vintageCake1Mes.url,
+      vintageCake3Meses.url,
+      vintageCakeAndar.url,
+      vintageCakeBento.url,
+    ],
+    alt: "Bolo vintage personalizado com acabamento clássico e elegante",
   },
   {
     title: "Smash Cake",
