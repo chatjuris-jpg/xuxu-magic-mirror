@@ -459,6 +459,13 @@ const PRODUCTS: Product[] = [
     title: "Smash Cake",
     desc: "Aquela bagunça gostosa do primeiro aninho: bolo pequeno, lindo e feito para ser destruído com as mãozinhas.",
     bg: "#EFC3D4",
+    imgs: [
+      smashCakeNakedFlowers.url,
+      smashCakeCarros.url,
+      smashCakeColorido.url,
+      smashCakeAzulAmarelo.url,
+    ],
+    alt: "Bolo Smash Cake decorado para festa de primeiro aninho",
   },
   {
     title: "Papel Arroz",
