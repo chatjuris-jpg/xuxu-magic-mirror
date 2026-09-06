@@ -815,10 +815,10 @@ function Index() {
                   className="grid overflow-hidden rounded-[2rem] border-2 border-navy bg-card shadow-[8px_8px_0_0_var(--navy)] md:grid-cols-2"
                 >
                   <div
-                    className={`relative flex min-h-64 items-center justify-center overflow-hidden p-10 ${i % 2 === 1 ? "md:order-2" : ""}`}
+                    className={`relative flex min-h-72 items-center justify-center overflow-hidden ${i % 2 === 1 ? "md:order-2" : ""}`}
                     style={{ backgroundColor: p.bg }}
                   >
-                    {p.art}
+                    <ProductFigure p={p} />
                   </div>
                   <div className="flex flex-col justify-center p-8 md:p-12">
                     <p className="font-script text-2xl text-plum">
