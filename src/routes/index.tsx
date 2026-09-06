@@ -333,44 +333,71 @@ const artInfantil = (
   </div>
 );
 
-const PRODUCTS: { title: string; desc: string; bg: string; art: ReactNode }[] = [
+type Product = {
+  title: string;
+  desc: string;
+  bg: string;
+  img?: string;
+  alt?: string;
+};
+
+const PRODUCTS: Product[] = [
   {
     title: "Cupcake Mesversário",
     desc: "Um mimo delicado para comemorar mês a mês. Perfeito para fotos, lembrancinhas e comemorações menores.",
     bg: "#F6CBD8",
-    art: artCupcake,
   },
   {
     title: "Kit Mesversário",
     desc: "Uma composição pensada para deixar a mesa pronta: bolo e docinhos combinando com o tema escolhido.",
     bg: "#C9E4D4",
-    art: artKit,
   },
   {
     title: "Kit com Cupcake",
     desc: "Bolo personalizado acompanhado de cupcakes no mesmo conceito visual, para uma mesa ainda mais charmosa.",
     bg: "#F5DF9E",
-    art: artKitCupcake,
   },
   {
     title: "Revelação",
     desc: "Bolos e doces para transformar a descoberta em um momento divertido, delicado e cheio de personalidade.",
     bg: "#F6CBD8",
-    art: artRevelacao,
   },
   {
     title: "Chá de Fraldas / Chá de Bebê",
     desc: "Uma mesa doce para celebrar a espera: criamos bolos, cupcakes e detalhes personalizados para o seu chá.",
     bg: "#D3E8F5",
-    art: artCha,
   },
   {
     title: "Infantil",
     desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
     bg: "#EFC3D4",
-    art: artInfantil,
   },
 ];
+
+function ProductFigure({ p }: { p: Product }) {
+  if (p.img) {
+    return (
+      <img
+        src={p.img}
+        alt={p.alt || p.title}
+        loading="lazy"
+        className="h-full w-full object-cover"
+      />
+    );
+  }
+
+  return (
+    <div className="flex h-full w-full flex-col items-center justify-center gap-3 p-6 text-navy/60">
+      <div className="flex size-20 items-center justify-center rounded-2xl border-2 border-dashed border-navy/40 bg-cream/60">
+        <Camera className="size-8" />
+      </div>
+      <p className="max-w-[12rem] text-center text-sm font-semibold leading-snug">
+        Espaço para foto do produto
+      </p>
+      <p className="text-xs text-navy/50">Envie a imagem e ela aparecerá aqui</p>
+    </div>
+  );
+}
 
 const STEPS = [
   {
