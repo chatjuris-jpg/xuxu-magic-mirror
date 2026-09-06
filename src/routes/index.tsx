@@ -554,6 +554,69 @@ function Index() {
           </div>
         </section>
 
+        {/* BRINDE 6º E 11º MÊS */}
+        <section className="py-20">
+          <div className="section-shell">
+            <div className="grid overflow-hidden rounded-[2.5rem] border-2 border-navy shadow-[8px_8px_0_0_var(--navy)] md:grid-cols-2">
+              <div className="bg-navy p-8 text-cream md:p-12 lg:p-14">
+                <p className="eyebrow !text-caramel">✦ Um carinho que continua</p>
+                <h2 className="mt-4 text-3xl font-bold leading-tight text-cream md:text-4xl">
+                  Nos 6 primeiros meses com a gente você ganha um brinde incrível
+                  personalizado com a nossa marca — e no 11º mês também.
+                </h2>
+                <p className="mt-5 text-sm leading-relaxed text-cream/80">
+                  É o nosso jeitinho de acompanhar cada fase e deixar o álbum do
+                  seu bebê ainda mais especial. Os brindes podem variar conforme
+                  a disponibilidade.
+                </p>
+                <Cta href={WA_TEMA} variant="light" className="mt-8 px-8 py-4 text-base">
+                  <Gift className="size-5" /> Quero participar
+                </Cta>
+              </div>
+
+              <div className="relative flex items-center justify-center overflow-hidden bg-plum p-10 md:p-14">
+                <div
+                  aria-hidden
+                  className="absolute -right-10 -top-10 size-56 rounded-full bg-cream/20 md:size-72"
+                />
+                <div
+                  aria-hidden
+                  className="absolute -left-12 bottom-10 size-40 rounded-full bg-cream/10"
+                />
+                <Heart
+                  aria-hidden
+                  className="absolute left-8 top-8 size-6 text-cream/80"
+                />
+                <Sparkles
+                  aria-hidden
+                  className="absolute right-10 top-12 size-5 text-caramel"
+                />
+                <div className="relative flex items-end gap-4 md:gap-6">
+                  {[
+                    { rot: "-8deg", h: "h-40", label: "Xuxuzinho", delay: "0s" },
+                    { rot: "2deg", h: "h-48", label: "Xuxuzinho", delay: "0.6s" },
+                    { rot: "9deg", h: "h-36", label: "Xuxuzinho", delay: "1.2s" },
+                  ].map((b, i) => (
+                    <div
+                      key={i}
+                      style={{ rotate: b.rot, animationDelay: b.delay }}
+                      className={`animate-float ${b.h} w-16 rounded-2xl border-2 border-navy bg-cream shadow-[6px_6px_0_0_rgba(0,0,0,0.25)] md:w-20`}
+                    >
+                      <div className="mx-auto -mt-4 h-7 w-10 rounded-t-xl border-2 border-navy bg-caramel md:w-12" />
+                      <p className="mt-8 -rotate-90 text-center font-script text-lg text-navy md:mt-12 md:text-xl">
+                        {b.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="absolute bottom-6 left-1/2 w-max -translate-x-1/2 rounded-full border-2 border-navy bg-caramel px-4 py-1.5 text-xs font-bold text-navy">
+                  meu mesversário
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* GALERIA POLAROID */}
         <section id="temas" className="bg-cream-deep py-20">
           <div className="section-shell">
