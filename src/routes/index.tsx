@@ -110,7 +110,7 @@ export const Route = createFileRoute("/")({
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=Yellowtail&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=Yellowtail&family=Quicksand:wght@500;600;700&display=swap",
       },
     ],
     scripts: [
@@ -990,7 +990,7 @@ function Index() {
                     <ProductFigure p={p} />
                   </div>
                   <div className="flex flex-col justify-center p-8 md:p-12">
-                    <p className="font-script text-2xl text-plum">
+                    <p className="font-soft text-2xl font-semibold text-plum">
                       {String(i + 1).padStart(2, "0")}
                     </p>
                     <h3 className="mt-2 text-3xl font-bold md:text-4xl">
