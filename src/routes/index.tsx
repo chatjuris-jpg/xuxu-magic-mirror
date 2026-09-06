@@ -42,6 +42,10 @@ import papelArrozDanilo9Meses from "@/assets/papel-arroz-danilo-9meses.jpg.asset
 import papelArrozToyStory from "@/assets/papel-arroz-toy-story.jpg.asset.json";
 import papelArrozFrozen from "@/assets/papel-arroz-frozen.jpg.asset.json";
 import papelArrozLuna from "@/assets/papel-arroz-luna.jpg.asset.json";
+import smashCakeNakedFlowers from "@/assets/smash-cake-naked-flowers.jpg.asset.json";
+import smashCakeCarros from "@/assets/smash-cake-carros.jpg.asset.json";
+import smashCakeColorido from "@/assets/smash-cake-colorido.jpg.asset.json";
+import smashCakeAzulAmarelo from "@/assets/smash-cake-azul-amarelo.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -455,6 +459,13 @@ const PRODUCTS: Product[] = [
     title: "Smash Cake",
     desc: "Aquela bagunça gostosa do primeiro aninho: bolo pequeno, lindo e feito para ser destruído com as mãozinhas.",
     bg: "#EFC3D4",
+    imgs: [
+      smashCakeNakedFlowers.url,
+      smashCakeCarros.url,
+      smashCakeColorido.url,
+      smashCakeAzulAmarelo.url,
+    ],
+    alt: "Bolo Smash Cake decorado para festa de primeiro aninho",
   },
   {
     title: "Papel Arroz",
