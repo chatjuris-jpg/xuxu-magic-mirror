@@ -619,6 +619,57 @@ function Index() {
           </div>
         </section>
 
+        {/* PRODUTOS — MUITO ALÉM DO MESVERSÁRIO */}
+        <section id="produtos" className="py-20">
+          <div className="section-shell">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="eyebrow">✦ Muito além do mesversário</p>
+              <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+                Escolha o produto perfeito para o seu momento.
+              </h2>
+              <p className="mt-4 text-navy/70">
+                Personalizamos cores, desenhos, frases e detalhes para combinar
+                com a sua comemoração.
+              </p>
+            </div>
+
+            <div className="mt-14 space-y-8">
+              {PRODUCTS.map((p, i) => (
+                <article
+                  key={p.title}
+                  className="grid overflow-hidden rounded-[2rem] border-2 border-navy bg-card shadow-[8px_8px_0_0_var(--navy)] md:grid-cols-2"
+                >
+                  <div
+                    className={`relative flex min-h-64 items-center justify-center overflow-hidden p-10 ${i % 2 === 1 ? "md:order-2" : ""}`}
+                    style={{ backgroundColor: p.bg }}
+                  >
+                    {p.art}
+                  </div>
+                  <div className="flex flex-col justify-center p-8 md:p-12">
+                    <p className="font-script text-2xl text-plum">
+                      {String(i + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-2 text-3xl font-bold md:text-4xl">
+                      {p.title}
+                    </h3>
+                    <p className="mt-4 leading-relaxed text-navy/70">
+                      {p.desc}
+                    </p>
+                    <a
+                      href={WA_ORCAMENTO}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-7 inline-flex w-fit items-center gap-2 rounded-full border-2 border-navy bg-cream px-7 py-3 text-sm font-bold text-navy transition-transform hover:-translate-y-0.5"
+                    >
+                      Pedir orçamento
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* GALERIA POLAROID */}
         <section id="temas" className="bg-cream-deep py-20">
           <div className="section-shell">
