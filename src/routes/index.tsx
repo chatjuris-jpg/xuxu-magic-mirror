@@ -368,6 +368,14 @@ const PRODUCTS: Product[] = [
     title: "Cupcake Mesversário",
     desc: "Um mimo delicado para comemorar mês a mês. Perfeito para fotos, lembrancinhas e comemorações menores.",
     bg: "#F6CBD8",
+    imgs: [
+      cupcakeMesversario1Mes.url,
+      cupcakeMesversario2Meses.url,
+      cupcakeMesversarioKit.url,
+      cupcakeMesversarioOnca.url,
+      cupcakeMesversarioLeao.url,
+    ],
+    alt: "Cupcake de mesversário personalizado com tema e número do mês",
   },
   {
     title: "Kit Mesversário",
