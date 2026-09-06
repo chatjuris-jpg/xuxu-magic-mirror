@@ -343,6 +343,7 @@ type Product = {
   desc: string;
   bg: string;
   img?: string;
+  imgs?: string[];
   alt?: string;
 };
 
