@@ -65,6 +65,7 @@
   --font-display: "Playfair Display", Georgia, serif;
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-script: "Yellowtail", cursive;
+  --font-soft: "Quicksand", "Poppins", ui-sans-serif, system-ui, sans-serif;
   --color-cream: var(--cream);
   --color-cream-deep: var(--cream-deep);
   --color-navy: var(--navy);
