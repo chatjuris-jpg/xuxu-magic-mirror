@@ -24,6 +24,11 @@ import chaFraldasBoloPersonalizado from "@/assets/cha-fraldas-bolo-personalizado
 import chaBebeBoloUrsinho from "@/assets/cha-bebe-bolo-ursinho.jpg.asset.json";
 import chaBebeBoloDecorado from "@/assets/cha-bebe-bolo-decorado.png.asset.json";
 import chaBebeBoloFlores from "@/assets/cha-bebe-bolo-flores.jpg.asset.json";
+import revelacaoCupcakes from "@/assets/revelacao-cupcakes.jpg.asset.json";
+import revelacaoBoloPersonalizado from "@/assets/revelacao-bolo-personalizado.jpg.asset.json";
+import revelacaoBentoCake from "@/assets/revelacao-bento-cake.jpg.asset.json";
+import revelacaoBoloCha from "@/assets/revelacao-bolo-cha.jpg.asset.json";
+import revelacaoBoloBebe from "@/assets/revelacao-bolo-bebe.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
