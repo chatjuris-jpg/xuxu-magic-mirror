@@ -382,6 +382,14 @@ const PRODUCTS: Product[] = [
     title: "Batizado e 1ª Comunhão",
     desc: "Bolos e doces delicados para momentos de fé e celebração em família, com decoração elegante e singela.",
     bg: "#E8E4F3",
+    imgs: [
+      batizado1.url,
+      batizado2.url,
+      batizado3.url,
+      batizado4.url,
+      batizado5.url,
+    ],
+    alt: "Bolo de batizado e primeira comunhão decorado",
   },
   {
     title: "Vintage Cake",
