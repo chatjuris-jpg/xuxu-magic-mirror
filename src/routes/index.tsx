@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
@@ -13,6 +13,11 @@ import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.j
 import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
+import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
+import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
+import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
+import batizado4 from "@/assets/bolo_decorado_para_batizado_primeira_comunhao.jpg.asset.json";
+import batizado5 from "@/assets/batizado_bolo.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
