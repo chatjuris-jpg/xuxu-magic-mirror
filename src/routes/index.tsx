@@ -24,6 +24,11 @@ import chaFraldasBoloPersonalizado from "@/assets/cha-fraldas-bolo-personalizado
 import chaBebeBoloUrsinho from "@/assets/cha-bebe-bolo-ursinho.jpg.asset.json";
 import chaBebeBoloDecorado from "@/assets/cha-bebe-bolo-decorado.png.asset.json";
 import chaBebeBoloFlores from "@/assets/cha-bebe-bolo-flores.jpg.asset.json";
+import revelacaoCupcakes from "@/assets/revelacao-cupcakes.jpg.asset.json";
+import revelacaoBoloPersonalizado from "@/assets/revelacao-bolo-personalizado.jpg.asset.json";
+import revelacaoBentoCake from "@/assets/revelacao-bento-cake.jpg.asset.json";
+import revelacaoBoloCha from "@/assets/revelacao-bolo-cha.jpg.asset.json";
+import revelacaoBoloBebe from "@/assets/revelacao-bolo-bebe.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -373,6 +378,14 @@ const PRODUCTS: Product[] = [
     title: "Revelação",
     desc: "Bolos e doces para transformar a descoberta em um momento divertido, delicado e cheio de personalidade.",
     bg: "#F6CBD8",
+    imgs: [
+      revelacaoCupcakes.url,
+      revelacaoBoloPersonalizado.url,
+      revelacaoBentoCake.url,
+      revelacaoBoloCha.url,
+      revelacaoBoloBebe.url,
+    ],
+    alt: "Bolo de chá revelação decorado com tema rosa e azul",
   },
   {
     title: "Chá de Fraldas / Chá de Bebê",
