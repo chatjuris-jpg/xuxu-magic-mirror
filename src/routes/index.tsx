@@ -389,6 +389,12 @@ const PRODUCTS: Product[] = [
     title: "Kit com Cupcake",
     desc: "Bolo personalizado acompanhado de cupcakes no mesmo conceito visual, para uma mesa ainda mais charmosa.",
     bg: "#F5DF9E",
+    imgs: [
+      kitCupcakeMesversario.url,
+      kitBorboletaPersonalizado.url,
+      kitPapagaioMesversario.url,
+    ],
+    alt: "Kit com cupcake e bolo personalizado para mesversário",
   },
   {
     title: "Revelação",
