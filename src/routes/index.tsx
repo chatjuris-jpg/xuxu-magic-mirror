@@ -1199,7 +1199,7 @@ function Index() {
         <section id="contato" className="pb-24">
           <div className="section-shell">
             <div className="relative overflow-hidden rounded-[2.5rem] border-2 border-navy bg-caramel p-10 text-center shadow-[12px_12px_0_0_var(--navy)] md:p-16">
-              <span className="font-script text-3xl text-plum">psiu, mamãe!</span>
+              <span className="font-soft text-3xl font-semibold text-plum">psiu, mamãe!</span>
               <h2 className="mt-3 text-4xl font-bold md:text-5xl">
                 Qual será o tema do próximo mês do seu bebê?
               </h2>
