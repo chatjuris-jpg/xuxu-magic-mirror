@@ -24,6 +24,8 @@ import {
   PartyPopper,
   Phone,
   Instagram,
+  Gift,
+  Heart,
 } from "lucide-react";
 
 const WA_TEMA =
