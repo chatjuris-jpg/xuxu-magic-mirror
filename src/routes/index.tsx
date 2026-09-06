@@ -34,6 +34,9 @@ import cupcakeMesversario1Mes from "@/assets/cupcake-mesversario-1-mes.png.asset
 import cupcakeMesversarioKit from "@/assets/cupcake-mesversario-kit.jpg.asset.json";
 import cupcakeMesversarioOnca from "@/assets/cupcake-mesversario-onca.jpg.asset.json";
 import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.json";
+import kitCupcakeMesversario from "@/assets/kit-cupcake-mesversario.png.asset.json";
+import kitBorboletaPersonalizado from "@/assets/kit-borboleta-personalizado.jpg.asset.json";
+import kitPapagaioMesversario from "@/assets/kit-papagaio-mesversario.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -386,6 +389,12 @@ const PRODUCTS: Product[] = [
     title: "Kit com Cupcake",
     desc: "Bolo personalizado acompanhado de cupcakes no mesmo conceito visual, para uma mesa ainda mais charmosa.",
     bg: "#F5DF9E",
+    imgs: [
+      kitCupcakeMesversario.url,
+      kitBorboletaPersonalizado.url,
+      kitPapagaioMesversario.url,
+    ],
+    alt: "Kit com cupcake e bolo personalizado para mesversário",
   },
   {
     title: "Revelação",
