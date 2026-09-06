@@ -378,6 +378,14 @@ const PRODUCTS: Product[] = [
     title: "Revelação",
     desc: "Bolos e doces para transformar a descoberta em um momento divertido, delicado e cheio de personalidade.",
     bg: "#F6CBD8",
+    imgs: [
+      revelacaoCupcakes.url,
+      revelacaoBoloPersonalizado.url,
+      revelacaoBentoCake.url,
+      revelacaoBoloCha.url,
+      revelacaoBoloBebe.url,
+    ],
+    alt: "Bolo de chá revelação decorado com tema rosa e azul",
   },
   {
     title: "Chá de Fraldas / Chá de Bebê",
