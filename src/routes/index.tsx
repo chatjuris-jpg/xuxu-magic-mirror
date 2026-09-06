@@ -37,6 +37,11 @@ import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.
 import kitCupcakeMesversario from "@/assets/kit-cupcake-mesversario.png.asset.json";
 import kitBorboletaPersonalizado from "@/assets/kit-borboleta-personalizado.jpg.asset.json";
 import kitPapagaioMesversario from "@/assets/kit-papagaio-mesversario.png.asset.json";
+import papelArrozAniversario from "@/assets/papel-arroz-aniversario.jpg.asset.json";
+import papelArrozDanilo9Meses from "@/assets/papel-arroz-danilo-9meses.jpg.asset.json";
+import papelArrozToyStory from "@/assets/papel-arroz-toy-story.jpg.asset.json";
+import papelArrozFrozen from "@/assets/papel-arroz-frozen.jpg.asset.json";
+import papelArrozLuna from "@/assets/papel-arroz-luna.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -455,6 +460,14 @@ const PRODUCTS: Product[] = [
     title: "Papel Arroz",
     desc: "Desenhos e estampas personalizadas em papel arroz comestível para decorar bolos e doces com muito charme.",
     bg: "#C9E4D4",
+    imgs: [
+      papelArrozAniversario.url,
+      papelArrozDanilo9Meses.url,
+      papelArrozToyStory.url,
+      papelArrozFrozen.url,
+      papelArrozLuna.url,
+    ],
+    alt: "Bolo decorado com papel arroz personalizado com foto e personagens",
   },
 ];
 
