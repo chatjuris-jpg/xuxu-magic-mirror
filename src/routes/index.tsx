@@ -379,6 +379,8 @@ const PRODUCTS: Product[] = [
     title: "Infantil",
     desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
     bg: "#EFC3D4",
+    imgs: [infantilMariaLaura.url, infantilIngridStitch.url],
+    alt: "Bolo infantil personalizado com personagens e temas especiais",
   },
   {
     title: "Batizado e 1ª Comunhão",
