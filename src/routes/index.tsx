@@ -372,6 +372,26 @@ const PRODUCTS: Product[] = [
     desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
     bg: "#EFC3D4",
   },
+  {
+    title: "Batizado e 1ª Comunhão",
+    desc: "Bolos e doces delicados para momentos de fé e celebração em família, com decoração elegante e singela.",
+    bg: "#E8E4F3",
+  },
+  {
+    title: "Vintage Cake",
+    desc: "Estilo clássico e elegante, com acabamento liso, flores e cores suaves para qualquer ocasião especial.",
+    bg: "#F5DF9E",
+  },
+  {
+    title: "Smash Cake",
+    desc: "Aquela bagunça gostosa do primeiro aninho: bolo pequeno, lindo e feito para ser destruído com as mãozinhas.",
+    bg: "#EFC3D4",
+  },
+  {
+    title: "Papel Arroz",
+    desc: "Desenhos e estampas personalizadas em papel arroz comestível para decorar bolos e doces com muito charme.",
+    bg: "#C9E4D4",
+  },
 ];
 
 function ProductFigure({ p }: { p: Product }) {
