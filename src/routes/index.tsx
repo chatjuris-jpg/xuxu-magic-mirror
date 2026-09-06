@@ -333,7 +333,7 @@ const artInfantil = (
   </div>
 );
 
-const PRODUCTS: { title: string; desc: string; bg: string; art: React.ReactNode }[] = [
+const PRODUCTS: { title: string; desc: string; bg: string; art: ReactNode }[] = [
   {
     title: "Cupcake Mesversário",
     desc: "Um mimo delicado para comemorar mês a mês. Perfeito para fotos, lembrancinhas e comemorações menores.",
