@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
 import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
@@ -223,6 +223,154 @@ const POLAROIDS = MONTHS.map((m) => ({
   cap: `${m.n}º mês · ${m.tema}`,
   alt: m.alt,
 }));
+
+/* Ilustrações em CSS para os cartões de produto */
+const artCupcake = (
+  <div className="relative">
+    <span className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-full border-2 border-navy bg-navy px-3 py-1 text-xs font-bold text-cream">
+      1 mês
+    </span>
+    <div className="h-12 w-28 rounded-t-full border-2 border-navy bg-cream" />
+    <div
+      className="h-24 w-24 border-2 border-navy"
+      style={{
+        backgroundColor: "#D96C85",
+        clipPath: "polygon(8% 0, 92% 0, 78% 100%, 22% 100%)",
+        backgroundImage:
+          "repeating-linear-gradient(90deg, rgba(255,255,255,.35) 0 8px, transparent 8px 18px)",
+      }}
+    />
+  </div>
+);
+
+const artKit = (
+  <div className="relative rotate-[-4deg] rounded-2xl border-2 border-navy bg-cream p-6 pb-3 shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
+    <div className="flex items-end gap-3">
+      <div className="flex size-24 items-center justify-center rounded-full border-2 border-navy bg-card font-script text-xl text-plum">
+        Xuxu
+      </div>
+      <div className="flex flex-col gap-2">
+        <span className="size-8 rounded-full border-2 border-navy bg-caramel" />
+        <span className="size-8 rounded-full border-2 border-navy" style={{ backgroundColor: "#D96C85" }} />
+        <span className="size-8 rounded-full border-2 border-navy" style={{ backgroundColor: "#7FB894" }} />
+      </div>
+    </div>
+    <p className="font-script mt-2 text-xl text-navy">kit mesversário</p>
+  </div>
+);
+
+const artKitCupcake = (
+  <div className="relative flex items-end gap-5">
+    <div className="flex size-32 items-center justify-center rounded-full border-2 border-navy bg-card font-script text-2xl text-navy shadow-[6px_6px_0_0_rgba(0,0,0,0.15)]">
+      6 meses
+    </div>
+    <div className="flex gap-2">
+      {[0, 1].map((k) => (
+        <div key={k} className={k === 1 ? "-mt-6 rotate-6" : "-rotate-3"}>
+          <div className="mx-auto h-8 w-16 rounded-t-full border-2 border-navy bg-cream" />
+          <div
+            className="h-16 w-14 border-2 border-navy"
+            style={{
+              backgroundColor: "#D96C85",
+              clipPath: "polygon(8% 0, 92% 0, 78% 100%, 22% 100%)",
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const artRevelacao = (
+  <>
+    <div aria-hidden className="absolute inset-y-0 left-0 w-1/2" style={{ backgroundColor: "#F6CBD8" }} />
+    <div aria-hidden className="absolute inset-y-0 right-0 w-1/2" style={{ backgroundColor: "#BFE0F2" }} />
+    <div className="relative flex size-36 items-center justify-center rounded-2xl border-2 border-navy bg-cream text-7xl font-bold text-navy shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
+      ?
+    </div>
+    <span aria-hidden className="absolute bottom-10 left-12 size-14 rounded-full border-2 border-navy" style={{ backgroundColor: "#E58AA5" }} />
+    <span aria-hidden className="absolute bottom-10 right-12 size-14 rounded-full border-2 border-navy" style={{ backgroundColor: "#7FC4E8" }} />
+  </>
+);
+
+const artCha = (
+  <div className="relative">
+    <Heart aria-hidden className="absolute -left-16 top-2 size-6 text-navy/50" />
+    <Heart aria-hidden className="absolute -right-16 bottom-6 size-6 text-navy/50" />
+    <Sparkles aria-hidden className="absolute -right-14 top-0 size-5 text-navy/60" />
+    <div className="mx-auto h-10 w-24 rounded-t-full border-2 border-navy bg-card" />
+    <div className="flex h-24 w-40 items-center justify-center rounded-2xl border-2 border-navy bg-cream">
+      <p className="font-script text-2xl" style={{ color: "#6FA8C9" }}>
+        chá do bebê
+      </p>
+    </div>
+    <div className="mx-auto h-3 w-44 rounded-b-xl border-2 border-navy bg-caramel" />
+  </div>
+);
+
+const artInfantil = (
+  <div className="relative">
+    {[
+      { c: "#26415E", s: "left-[-70px] top-[-30px] rotate-45" },
+      { c: "#F2C14E", s: "right-[-70px] top-[-40px] rotate-12" },
+      { c: "#7FB894", s: "left-[-50px] bottom-[-30px] rotate-[70deg]" },
+      { c: "#FFFFFF", s: "right-[-60px] bottom-[-20px] rotate-[-30deg]" },
+    ].map((sp, k) => (
+      <span
+        key={k}
+        aria-hidden
+        className={`absolute h-8 w-3 rounded-full border-2 border-navy ${sp.s}`}
+        style={{ backgroundColor: sp.c }}
+      />
+    ))}
+    <div className="flex size-36 items-center justify-center rounded-full border-2 border-navy bg-cream shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
+      <span className="text-6xl font-bold" style={{ color: "#E2587E" }}>
+        5
+      </span>
+    </div>
+    <Star aria-hidden className="absolute left-6 top-4 size-4 fill-caramel text-caramel" />
+    <Star aria-hidden className="absolute bottom-6 right-4 size-4 fill-caramel text-caramel" />
+  </div>
+);
+
+const PRODUCTS: { title: string; desc: string; bg: string; art: ReactNode }[] = [
+  {
+    title: "Cupcake Mesversário",
+    desc: "Um mimo delicado para comemorar mês a mês. Perfeito para fotos, lembrancinhas e comemorações menores.",
+    bg: "#F6CBD8",
+    art: artCupcake,
+  },
+  {
+    title: "Kit Mesversário",
+    desc: "Uma composição pensada para deixar a mesa pronta: bolo e docinhos combinando com o tema escolhido.",
+    bg: "#C9E4D4",
+    art: artKit,
+  },
+  {
+    title: "Kit com Cupcake",
+    desc: "Bolo personalizado acompanhado de cupcakes no mesmo conceito visual, para uma mesa ainda mais charmosa.",
+    bg: "#F5DF9E",
+    art: artKitCupcake,
+  },
+  {
+    title: "Revelação",
+    desc: "Bolos e doces para transformar a descoberta em um momento divertido, delicado e cheio de personalidade.",
+    bg: "#F6CBD8",
+    art: artRevelacao,
+  },
+  {
+    title: "Chá de Fraldas / Chá de Bebê",
+    desc: "Uma mesa doce para celebrar a espera: criamos bolos, cupcakes e detalhes personalizados para o seu chá.",
+    bg: "#D3E8F5",
+    art: artCha,
+  },
+  {
+    title: "Infantil",
+    desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
+    bg: "#EFC3D4",
+    art: artInfantil,
+  },
+];
 
 const STEPS = [
   {
@@ -615,6 +763,57 @@ function Index() {
                   meu mesversário
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PRODUTOS — MUITO ALÉM DO MESVERSÁRIO */}
+        <section id="produtos" className="py-20">
+          <div className="section-shell">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="eyebrow">✦ Muito além do mesversário</p>
+              <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+                Escolha o produto perfeito para o seu momento.
+              </h2>
+              <p className="mt-4 text-navy/70">
+                Personalizamos cores, desenhos, frases e detalhes para combinar
+                com a sua comemoração.
+              </p>
+            </div>
+
+            <div className="mt-14 space-y-8">
+              {PRODUCTS.map((p, i) => (
+                <article
+                  key={p.title}
+                  className="grid overflow-hidden rounded-[2rem] border-2 border-navy bg-card shadow-[8px_8px_0_0_var(--navy)] md:grid-cols-2"
+                >
+                  <div
+                    className={`relative flex min-h-64 items-center justify-center overflow-hidden p-10 ${i % 2 === 1 ? "md:order-2" : ""}`}
+                    style={{ backgroundColor: p.bg }}
+                  >
+                    {p.art}
+                  </div>
+                  <div className="flex flex-col justify-center p-8 md:p-12">
+                    <p className="font-script text-2xl text-plum">
+                      {String(i + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-2 text-3xl font-bold md:text-4xl">
+                      {p.title}
+                    </h3>
+                    <p className="mt-4 leading-relaxed text-navy/70">
+                      {p.desc}
+                    </p>
+                    <a
+                      href={WA_ORCAMENTO}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-7 inline-flex w-fit items-center gap-2 rounded-full border-2 border-navy bg-cream px-7 py-3 text-sm font-bold text-navy transition-transform hover:-translate-y-0.5"
+                    >
+                      Pedir orçamento
+                    </a>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
