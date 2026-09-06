@@ -20,6 +20,10 @@ import batizado4 from "@/assets/bolo_decorado_para_batizado_primeira_comunhao.jp
 import batizado5 from "@/assets/batizado_bolo.jpg.asset.json";
 import infantilMariaLaura from "@/assets/infantil-maria-laura-6meses.jpg.asset.json";
 import infantilIngridStitch from "@/assets/infantil-ingrid-stitch.jpg.asset.json";
+import chaFraldasBoloPersonalizado from "@/assets/cha-fraldas-bolo-personalizado.jpg.asset.json";
+import chaBebeBoloUrsinho from "@/assets/cha-bebe-bolo-ursinho.jpg.asset.json";
+import chaBebeBoloDecorado from "@/assets/cha-bebe-bolo-decorado.png.asset.json";
+import chaBebeBoloFlores from "@/assets/cha-bebe-bolo-flores.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -374,6 +378,13 @@ const PRODUCTS: Product[] = [
     title: "Chá de Fraldas / Chá de Bebê",
     desc: "Uma mesa doce para celebrar a espera: criamos bolos, cupcakes e detalhes personalizados para o seu chá.",
     bg: "#D3E8F5",
+    imgs: [
+      chaFraldasBoloPersonalizado.url,
+      chaBebeBoloUrsinho.url,
+      chaBebeBoloDecorado.url,
+      chaBebeBoloFlores.url,
+    ],
+    alt: "Bolo de chá de fraldas e chá de bebê decorado e personalizado",
   },
   {
     title: "Infantil",
