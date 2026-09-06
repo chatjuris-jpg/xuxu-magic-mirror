@@ -18,6 +18,8 @@ import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
 import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
 import batizado4 from "@/assets/bolo_decorado_para_batizado_primeira_comunhao.jpg.asset.json";
 import batizado5 from "@/assets/batizado_bolo.jpg.asset.json";
+import infantilMariaLaura from "@/assets/infantil-maria-laura-6meses.jpg.asset.json";
+import infantilIngridStitch from "@/assets/infantil-ingrid-stitch.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -377,6 +379,8 @@ const PRODUCTS: Product[] = [
     title: "Infantil",
     desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
     bg: "#EFC3D4",
+    imgs: [infantilMariaLaura.url, infantilIngridStitch.url],
+    alt: "Bolo infantil personalizado com personagens e temas especiais",
   },
   {
     title: "Batizado e 1ª Comunhão",
