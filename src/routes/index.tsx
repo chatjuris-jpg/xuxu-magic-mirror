@@ -29,6 +29,11 @@ import revelacaoBoloPersonalizado from "@/assets/revelacao-bolo-personalizado.jp
 import revelacaoBentoCake from "@/assets/revelacao-bento-cake.jpg.asset.json";
 import revelacaoBoloCha from "@/assets/revelacao-bolo-cha.jpg.asset.json";
 import revelacaoBoloBebe from "@/assets/revelacao-bolo-bebe.jpg.asset.json";
+import cupcakeMesversario2Meses from "@/assets/cupcake-mesversario-2-meses.jpg.asset.json";
+import cupcakeMesversario1Mes from "@/assets/cupcake-mesversario-1-mes.png.asset.json";
+import cupcakeMesversarioKit from "@/assets/cupcake-mesversario-kit.jpg.asset.json";
+import cupcakeMesversarioOnca from "@/assets/cupcake-mesversario-onca.jpg.asset.json";
+import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -363,6 +368,14 @@ const PRODUCTS: Product[] = [
     title: "Cupcake Mesversário",
     desc: "Um mimo delicado para comemorar mês a mês. Perfeito para fotos, lembrancinhas e comemorações menores.",
     bg: "#F6CBD8",
+    imgs: [
+      cupcakeMesversario1Mes.url,
+      cupcakeMesversario2Meses.url,
+      cupcakeMesversarioKit.url,
+      cupcakeMesversarioOnca.url,
+      cupcakeMesversarioLeao.url,
+    ],
+    alt: "Cupcake de mesversário personalizado com tema e número do mês",
   },
   {
     title: "Kit Mesversário",
