@@ -34,6 +34,9 @@ import cupcakeMesversario1Mes from "@/assets/cupcake-mesversario-1-mes.png.asset
 import cupcakeMesversarioKit from "@/assets/cupcake-mesversario-kit.jpg.asset.json";
 import cupcakeMesversarioOnca from "@/assets/cupcake-mesversario-onca.jpg.asset.json";
 import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.json";
+import kitCupcakeMesversario from "@/assets/kit-cupcake-mesversario.png.asset.json";
+import kitBorboletaPersonalizado from "@/assets/kit-borboleta-personalizado.jpg.asset.json";
+import kitPapagaioMesversario from "@/assets/kit-papagaio-mesversario.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
