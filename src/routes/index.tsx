@@ -737,7 +737,7 @@ function Index() {
               <h1 className="mt-6 text-[2.6rem] leading-[1.02] font-bold tracking-tight md:text-[4rem]">
                 Cada etapa do seu bebê merece ser celebrado como uma{" "}
                 <span className="relative inline-block">
-                  <span className="relative z-10 text-plum">
+                  <span className="font-display relative z-10 text-plum">
                     grande conquista
                   </span>
                   <span className="absolute inset-x-0 bottom-1 z-0 h-4 -rotate-1 bg-caramel/70" />
