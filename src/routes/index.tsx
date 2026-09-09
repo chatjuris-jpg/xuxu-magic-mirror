@@ -85,6 +85,7 @@ import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
 import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
 import refDinoMatteo from "@/assets/referencia-dino-matteo.png.asset.json";
 import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.json";
+import refDinoThomas from "@/assets/inspire-bolo-dinossauro-thomas.png.asset.json";
 import bentoVaquinhaLiz from "@/assets/bento-cake-vaquinha-liz.jpg.asset.json";
 import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
@@ -868,6 +869,12 @@ const INSPIRATIONS = [
     alt: "Bolo de mesversário tema Como Treinar o Seu Dragão para o Leonardo, 6 meses",
     title: "Dragão",
     detail: "Leonardo · 6 meses",
+  },
+  {
+    img: refDinoThomas.url,
+    alt: "Bolo de mesversário tema dinossauro azul para o Thomas, 1 mês",
+    title: "Dino baby",
+    detail: "Thomas · 1 mês",
   },
 ];
 
