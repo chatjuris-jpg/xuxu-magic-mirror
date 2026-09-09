@@ -1468,13 +1468,13 @@ function Index() {
         </section>
       </main>
 
-      {lightbox && lightboxProduct && lightboxImages.length > 0 && (
+      {lightbox && lightboxImages.length > 0 && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/95 p-4 backdrop-blur-sm"
           onClick={closeLightbox}
           role="dialog"
           aria-modal="true"
-          aria-label={`Galeria de ${lightboxProduct.title}`}
+          aria-label="Galeria de fotos"
         >
           <button
             type="button"
@@ -1515,7 +1515,7 @@ function Index() {
           >
             <img
               src={lightboxImages[lightbox.imageIndex]}
-              alt={`${lightboxProduct.alt || lightboxProduct.title} — foto ${lightbox.imageIndex + 1}`}
+              alt={`${lightbox.alt} — foto ${lightbox.imageIndex + 1}`}
               className="max-h-[85vh] w-full object-contain"
             />
           </div>
