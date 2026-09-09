@@ -921,9 +921,7 @@ function Index() {
                   exclusivos ao longo da jornada.
                 </h2>
                 <p className="mt-5 text-sm leading-relaxed text-cream/80">
-                  É o nosso jeitinho de acompanhar cada fase e deixar o álbum do
-                  seu bebê ainda mais especial. Os brindes podem variar conforme
-                  a disponibilidade.
+                  Os brindes podem variar conforme disponibilidade.
                 </p>
                 <Cta href={WA_TEMA} variant="light" className="mt-8 px-8 py-4 text-base">
                   <Gift className="size-5" /> Quero participar
