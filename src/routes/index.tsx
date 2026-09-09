@@ -1387,13 +1387,11 @@ function Index() {
 
       <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
         <div className="section-shell flex flex-col items-center gap-6 text-center">
-          <div className="rounded-2xl bg-cream px-6 py-3 shadow-[4px_4px_0_0_var(--navy)]">
-            <img
-              src={logoXuxuzinho.url}
-              alt="Xuxuzinho"
-              className="h-12 w-auto"
-            />
-          </div>
+          <img
+            src={logoXuxuzinho.url}
+            alt="Xuxuzinho"
+            className="h-14 w-auto drop-shadow-[2px_2px_0_var(--navy)]"
+          />
 
           <p className="text-sm text-cream/90">
             Confeitaria artesanal · Pedidos pelo WhatsApp{" "}
