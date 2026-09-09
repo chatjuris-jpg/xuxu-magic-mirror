@@ -1301,7 +1301,7 @@ function Index() {
                 As vagas na agenda mensal são limitadas para garantir o acabamento
                 impecável de cada encomenda.
               </p>
-              <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
+              <div className="mt-9 flex flex-col items-center gap-4">
                 <Cta href={WA_ORCAMENTO} variant="plum" className="px-8 py-4 text-base">
                   <MessageCircle className="size-5" /> Fazer orçamento via WhatsApp
                 </Cta>
