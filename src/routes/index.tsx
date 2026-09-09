@@ -9,6 +9,9 @@ import mes8Papagaio from "@/assets/mes8-papagaio.png.asset.json";
 import mes8EightAzul from "@/assets/mes8-eight-azul.jpg.asset.json";
 import mes8AliceArcoIris from "@/assets/mes8-alice-arcoiris.jpg.asset.json";
 import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
+import mes9CapitaoAmerica from "@/assets/bolo-bento-cake-capitao-america.jpg.asset.json";
+import mes9Rapunzel from "@/assets/bento-cake-rapunzel-9meses.jpg.asset.json";
+import mes9FlorDelicado from "@/assets/bento-cake-flor-delicado-9meses.jpg.asset.json";
 import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
@@ -245,10 +248,11 @@ const MONTHS_RAW = [
   },
   {
     n: 9,
-    tema: "Menina Superpoderosa",
-    img: mes9SuperpoderosaNovo.url,
-    alt: "Bolo do nono mês decorado com tema Menina Superpoderosa",
-    emoji: "💚",
+    tema: "Capitão América",
+    img: mes9CapitaoAmerica.url,
+    imgs: [mes9CapitaoAmerica.url, mes9Rapunzel.url, mes9FlorDelicado.url],
+    alt: "Bolo do nono mês decorado com tema Capitão América e nome Matteo",
+    emoji: "🛡️",
   },
   {
     n: 10,
@@ -1029,7 +1033,9 @@ function Index() {
               {MONTHS.map((m) => (
                 <button
                   key={m.n}
+                  type="button"
                   onClick={() => {
+                    console.log("CLICK REACT MES", m.n);
                     setMes(m.n);
                     setMesSlide(0);
                   }}
