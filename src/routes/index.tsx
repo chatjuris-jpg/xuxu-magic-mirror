@@ -67,6 +67,9 @@ import {
   Heart,
   MapPin,
   ExternalLink,
+  ChevronLeft,
+  ChevronRight,
+  X,
 } from "lucide-react";
 
 const WA_TEMA =
@@ -508,7 +511,15 @@ const PRODUCTS: Product[] = [
   },
 ];
 
-function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
+function ProductCarousel({
+  imgs,
+  alt,
+  onImageClick,
+}: {
+  imgs: string[];
+  alt: string;
+  onImageClick: ((imageIndex: number) => void) | undefined;
+}) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -526,13 +537,20 @@ function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {imgs.map((src, i) => (
-          <img
+          <button
             key={src}
-            src={src}
-            alt={`${alt} — foto ${i + 1}`}
-            loading="lazy"
-            className="h-full w-full shrink-0 object-cover"
-          />
+            type="button"
+            onClick={() => onImageClick?.(i)}
+            className="relative h-full w-full shrink-0 cursor-zoom-in p-0"
+            aria-label={`Ampliar foto ${i + 1} de ${alt}`}
+          >
+            <img
+              src={src}
+              alt={`${alt} — foto ${i + 1}`}
+              loading="lazy"
+              className="pointer-events-none h-full w-full object-cover"
+            />
+          </button>
         ))}
       </div>
       <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
@@ -541,7 +559,10 @@ function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
             key={src}
             type="button"
             aria-label={`Ver foto ${i + 1}`}
-            onClick={() => setIndex(i)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIndex(i);
+            }}
             className={`size-2.5 rounded-full border border-navy transition-colors ${
               i === index ? "bg-navy" : "bg-card/70"
             }`}
@@ -552,19 +573,38 @@ function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
   );
 }
 
-function ProductFigure({ p }: { p: Product }) {
+function ProductFigure({
+  p,
+  onImageClick,
+}: {
+  p: Product;
+  onImageClick: ((imageIndex: number) => void) | undefined;
+}) {
   if (p.imgs && p.imgs.length > 0) {
-    return <ProductCarousel imgs={p.imgs} alt={p.alt || p.title} />;
+    return (
+      <ProductCarousel
+        imgs={p.imgs}
+        alt={p.alt || p.title}
+        onImageClick={onImageClick}
+      />
+    );
   }
 
   if (p.img) {
     return (
-      <img
-        src={p.img}
-        alt={p.alt || p.title}
-        loading="lazy"
-        className="h-full w-full object-cover"
-      />
+      <button
+        type="button"
+        onClick={() => onImageClick?.(0)}
+        className="relative h-full w-full cursor-zoom-in"
+        aria-label={`Ampliar imagem de ${p.title}`}
+      >
+        <img
+          src={p.img}
+          alt={p.alt || p.title}
+          loading="lazy"
+          className="pointer-events-none h-full w-full object-cover"
+        />
+      </button>
     );
   }
 
@@ -701,7 +741,66 @@ function Cta({
 function Index() {
   const [mes, setMes] = useState(1);
   const [open, setOpen] = useState<number | null>(0);
+  const [lightbox, setLightbox] = useState<{
+    productIndex: number;
+    imageIndex: number;
+  } | null>(null);
   const atual = MONTHS.find((m) => m.n === mes)!;
+
+  const openLightbox = (productIndex: number, imageIndex: number) => {
+    setLightbox({ productIndex, imageIndex });
+  };
+
+  const closeLightbox = () => setLightbox(null);
+
+  const lightboxProduct = lightbox ? PRODUCTS[lightbox.productIndex] : null;
+  const lightboxImages = lightboxProduct?.imgs ||
+    (lightboxProduct?.img ? [lightboxProduct.img] : []);
+
+  const goPrev = () => {
+    if (!lightbox) return;
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === 0
+                ? lightboxImages.length - 1
+                : prev.imageIndex - 1,
+          }
+        : null,
+    );
+  };
+
+  const goNext = () => {
+    if (!lightbox) return;
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === lightboxImages.length - 1
+                ? 0
+                : prev.imageIndex + 1,
+          }
+        : null,
+    );
+  };
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [lightbox, lightboxImages.length]);
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-cream text-navy">
@@ -970,7 +1069,10 @@ function Index() {
                     className={`relative flex min-h-72 items-center justify-center overflow-hidden ${i % 2 === 1 ? "md:order-2" : ""}`}
                     style={{ backgroundColor: p.bg }}
                   >
-                    <ProductFigure p={p} />
+                    <ProductFigure
+                      p={p}
+                      onImageClick={(imageIndex) => openLightbox(i, imageIndex)}
+                    />
                   </div>
                   <div className="flex flex-col justify-center p-8 md:p-12">
                     <p className="font-soft text-2xl font-semibold text-plum">
@@ -1207,6 +1309,64 @@ function Index() {
           </div>
         </section>
       </main>
+
+      {lightbox && lightboxProduct && lightboxImages.length > 0 && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/95 p-4 backdrop-blur-sm"
+          onClick={closeLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Galeria de ${lightboxProduct.title}`}
+        >
+          <button
+            type="button"
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy"
+            aria-label="Fechar galeria"
+          >
+            <X className="size-6" />
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              goPrev();
+            }}
+            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy md:left-6"
+            aria-label="Foto anterior"
+          >
+            <ChevronLeft className="size-7" />
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              goNext();
+            }}
+            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy md:right-6"
+            aria-label="Próxima foto"
+          >
+            <ChevronRight className="size-7" />
+          </button>
+
+          <div
+            className="relative max-h-[85vh] w-full max-w-5xl overflow-hidden rounded-2xl border-4 border-cream bg-cream shadow-[0_0_0_4px_var(--navy)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={lightboxImages[lightbox.imageIndex]}
+              alt={`${lightboxProduct.alt || lightboxProduct.title} — foto ${lightbox.imageIndex + 1}`}
+              className="max-h-[85vh] w-full object-contain"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-navy/80 px-4 py-3 text-center text-sm font-semibold text-cream">
+              {lightboxProduct.title} — foto {lightbox.imageIndex + 1} de{" "}
+              {lightboxImages.length}
+            </div>
+          </div>
+        </div>
+      )}
 
       <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
         <div className="section-shell flex flex-col items-center gap-6 text-center">
