@@ -65,6 +65,8 @@ import {
   Instagram,
   Gift,
   Heart,
+  MapPin,
+  ExternalLink,
 } from "lucide-react";
 
 const WA_TEMA =
@@ -1205,13 +1207,55 @@ function Index() {
         </section>
       </main>
 
-      <footer className="border-t-2 border-navy bg-plum py-10 text-cream">
-        <div className="section-shell flex flex-wrap items-center justify-between gap-4 text-sm text-cream/80">
-          <span className="font-script text-3xl text-cream">Xuxuzinho</span>
-          <p>Confeitaria artesanal · Tatuapé, São Paulo · Pedidos pelo WhatsApp</p>
-          <span className="flex items-center gap-2">
+      <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
+        <div className="section-shell flex flex-col items-center gap-6 text-center">
+          <span className="font-script text-4xl text-cream">Xuxuzinho</span>
+
+          <p className="text-sm text-cream/90">
+            Confeitaria artesanal · Pedidos pelo WhatsApp{" "}
+            <span className="font-semibold">11 97187-2937</span>
+          </p>
+
+          <div className="flex flex-col items-center gap-2 text-sm text-cream/90">
+            <span className="flex items-center gap-2">
+              <MapPin className="size-4" />
+              R. Manuel de Atouguia, 14 – Tatuapé, São Paulo/SP · CEP 03313-020
+            </span>
+            <a
+              href="https://www.google.com/maps?q=R.+Manuel+de+Atouguia,+14,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+03313-020"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 underline underline-offset-4 transition-opacity hover:opacity-80"
+            >
+              <ExternalLink className="size-3.5" /> Ver no Google Maps
+            </a>
+          </div>
+
+          <div className="w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-cream/20">
+            <iframe
+              title="Localização Xuxuzinho"
+              src="https://www.google.com/maps?q=R.+Manuel+de+Atouguia,+14,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+03313-020&output=embed"
+              width="100%"
+              height="280"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+
+          <a
+            href="https://instagram.com/xuxuzinho"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 text-sm font-semibold text-cream/90 transition-opacity hover:opacity-80"
+          >
             <Instagram className="size-4" /> @xuxuzinho
-          </span>
+          </a>
+
+          <p className="text-xs text-cream/60">
+            © {new Date().getFullYear()} Xuxuzinho. Todos os direitos reservados.
+          </p>
         </div>
       </footer>
 
