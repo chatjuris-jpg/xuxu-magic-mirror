@@ -715,6 +715,39 @@ const RIBBON = [
   "parabéns pra você",
 ];
 
+const INSPIRATIONS = [
+  {
+    img: refCarrinhosTheo.url,
+    alt: "Bolo de mesversário tema carrinhos para o Theo, 9 meses",
+    title: "Carrinhos",
+    detail: "Theo · 9 meses",
+  },
+  {
+    img: refAbelhinha.url,
+    alt: "Bolo de mesversário tema abelhinha para 11 meses",
+    title: "Abelhinha",
+    detail: "11 meses",
+  },
+  {
+    img: refDinoLucca.url,
+    alt: "Bolo de mesversário tema dinossauro para o Lucca, 2 meses",
+    title: "Dinossauro",
+    detail: "Lucca · 2 meses",
+  },
+  {
+    img: refDinoMatteo.url,
+    alt: "Bolo de mesversário tema dinossauro para o Matteo, 2 meses",
+    title: "Dino divertido",
+    detail: "Matteo · 2 meses",
+  },
+  {
+    img: refDragaoLeonardo.url,
+    alt: "Bolo de mesversário tema Como Treinar o Seu Dragão para o Leonardo, 6 meses",
+    title: "Dragão",
+    detail: "Leonardo · 6 meses",
+  },
+];
+
 function Cta({
   href,
   children,
