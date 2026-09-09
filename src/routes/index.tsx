@@ -3,7 +3,6 @@ import { useEffect, useState, type ReactNode } from "react";
 import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
-import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
 import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
 import mes5PoderosoMiguel from "@/assets/mes-5-poderoso-miguel.png.asset.json";
 import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
@@ -65,6 +64,9 @@ import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
 import bentoMes2Frutinha from "@/assets/bento-cake-mesversario-frutinha.jpg.asset.json";
 import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
+import bentoMes3Aranha from "@/assets/bolo-homem-aranha-3meses.jpg.asset.json";
+import bentoMes3Coelho from "@/assets/bento-coelho-3meses.jpg.asset.json";
+import bentoMes3Abelhas from "@/assets/bento-abelhinhas-3meses.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -187,10 +189,11 @@ const MONTHS_RAW = [
   },
   {
     n: 3,
-    tema: "Cinderela",
-    img: mes3RafaelaCinderela.url,
-    alt: "Bolo do terceiro mês decorado com o tema Cinderela e nome Rafaela",
-    emoji: "🌷",
+    tema: "Homem-Aranha",
+    img: bentoMes3Aranha.url,
+    imgs: [bentoMes3Aranha.url, bentoMes3Coelho.url, bentoMes3Abelhas.url],
+    alt: "Bolo do terceiro mês decorado com o tema Homem-Aranha",
+    emoji: "🕷️",
   },
   {
     n: 4,
