@@ -1033,14 +1033,15 @@ function Index() {
       </div>
 
       <header className="sticky top-0 z-50 border-b-2 border-navy bg-cream/95 backdrop-blur">
-        <div className="section-shell flex h-20 items-center justify-between gap-6">
+        <div className="section-shell flex h-24 items-center justify-between gap-6">
           <a href="#top" className="flex items-center">
             <img
               src={xuxuzinhoLogoOficial.url}
               alt="Xuxuzinho Confeitaria Artesanal"
-              className="h-18 w-auto object-contain"
+              className="h-22 w-auto object-contain"
             />
           </a>
+
           <nav className="hidden items-center gap-2 lg:flex">
             {NAV.map((item) => (
               <a
