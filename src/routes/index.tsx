@@ -1295,6 +1295,64 @@ function Index() {
         </section>
       </main>
 
+      {lightbox && lightboxProduct && lightboxImages.length > 0 && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/95 p-4 backdrop-blur-sm"
+          onClick={closeLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Galeria de ${lightboxProduct.title}`}
+        >
+          <button
+            type="button"
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy"
+            aria-label="Fechar galeria"
+          >
+            <X className="size-6" />
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              goPrev();
+            }}
+            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy md:left-6"
+            aria-label="Foto anterior"
+          >
+            <ChevronLeft className="size-7" />
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              goNext();
+            }}
+            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-cream/30 bg-navy/80 p-2 text-cream transition-colors hover:bg-navy md:right-6"
+            aria-label="Próxima foto"
+          >
+            <ChevronRight className="size-7" />
+          </button>
+
+          <div
+            className="relative max-h-[85vh] w-full max-w-5xl overflow-hidden rounded-2xl border-4 border-cream bg-cream shadow-[0_0_0_4px_var(--navy)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={lightboxImages[lightbox.imageIndex]}
+              alt={`${lightboxProduct.alt || lightboxProduct.title} — foto ${lightbox.imageIndex + 1}`}
+              className="max-h-[85vh] w-full object-contain"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-navy/80 px-4 py-3 text-center text-sm font-semibold text-cream">
+              {lightboxProduct.title} — foto {lightbox.imageIndex + 1} de{" "}
+              {lightboxImages.length}
+            </div>
+          </div>
+        </div>
+      )}
+
       <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
         <div className="section-shell flex flex-col items-center gap-6 text-center">
           <span className="font-script text-4xl text-cream">Xuxuzinho</span>
