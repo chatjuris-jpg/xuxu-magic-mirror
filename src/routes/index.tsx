@@ -1051,7 +1051,10 @@ function Index() {
                     className={`relative flex min-h-72 items-center justify-center overflow-hidden ${i % 2 === 1 ? "md:order-2" : ""}`}
                     style={{ backgroundColor: p.bg }}
                   >
-                    <ProductFigure p={p} />
+                    <ProductFigure
+                      p={p}
+                      onImageClick={(imageIndex) => openLightbox(i, imageIndex)}
+                    />
                   </div>
                   <div className="flex flex-col justify-center p-8 md:p-12">
                     <p className="font-soft text-2xl font-semibold text-plum">
