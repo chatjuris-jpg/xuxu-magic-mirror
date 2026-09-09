@@ -921,7 +921,7 @@ function Index() {
                 </Cta>
               </div>
 
-              <div className="relative flex items-center justify-center overflow-hidden bg-plum p-10 md:p-14">
+              <div className="relative flex items-center justify-center overflow-hidden bg-plum p-8 md:p-12">
                 <div
                   aria-hidden
                   className="absolute -right-10 -top-10 size-56 rounded-full bg-cream/20 md:size-72"
@@ -938,24 +938,11 @@ function Index() {
                   aria-hidden
                   className="absolute right-10 top-12 size-5 text-caramel"
                 />
-                <div className="relative flex items-end gap-4 md:gap-6">
-                  {[
-                    { rot: "-8deg", h: "h-40", label: "Xuxuzinho", delay: "0s" },
-                    { rot: "2deg", h: "h-48", label: "Xuxuzinho", delay: "0.6s" },
-                    { rot: "9deg", h: "h-36", label: "Xuxuzinho", delay: "1.2s" },
-                  ].map((b, i) => (
-                    <div
-                      key={i}
-                      style={{ rotate: b.rot, animationDelay: b.delay }}
-                      className={`animate-float ${b.h} w-16 rounded-2xl border-2 border-navy bg-cream shadow-[6px_6px_0_0_rgba(0,0,0,0.25)] md:w-20`}
-                    >
-                      <div className="mx-auto -mt-4 h-7 w-10 rounded-t-xl border-2 border-navy bg-caramel md:w-12" />
-                      <p className="mt-8 -rotate-90 text-center font-script text-lg text-navy md:mt-12 md:text-xl">
-                        {b.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+                <img
+                  src={garrafinhasXuxuzinho.url}
+                  alt="Garrafinhas térmicas personalizadas com a marca Xuxuzinho em tons de azul e creme"
+                  className="relative z-10 h-auto w-full max-w-sm object-contain drop-shadow-[8px_8px_0_rgba(0,0,0,0.25)]"
+                />
                 <p className="absolute bottom-6 left-1/2 w-max -translate-x-1/2 rounded-full border-2 border-navy bg-caramel px-4 py-1.5 text-xs font-bold text-navy">
                   meu mesversário
                 </p>
