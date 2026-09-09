@@ -814,6 +814,31 @@ function Cta({
   );
 }
 
+function MonthButton({
+  m,
+  active,
+  onSelect,
+}: {
+  m: (typeof MONTHS)[number];
+  active: boolean;
+  onSelect: (n: number) => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={() => onSelect(m.n)}
+      aria-pressed={active}
+      className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
+        active
+          ? "bg-caramel text-navy shadow-[4px_4px_0_0_var(--navy)]"
+          : "bg-cream/90 text-navy/70"
+      }`}
+    >
+      {m.n}º
+    </button>
+  );
+}
+
 function Index() {
   const [mes, setMes] = useState(1);
   const [mesSlide, setMesSlide] = useState(0);
