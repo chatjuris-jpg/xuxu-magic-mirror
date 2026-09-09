@@ -52,6 +52,7 @@ import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
 import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
+import logoXuxuzinho from "@/assets/xuxuzinho-logo-oficial.png.asset.json";
 import {
   MessageCircle,
   Sparkles,
@@ -1386,7 +1387,13 @@ function Index() {
 
       <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
         <div className="section-shell flex flex-col items-center gap-6 text-center">
-          <span className="font-script text-4xl text-cream">Xuxuzinho</span>
+          <div className="rounded-2xl bg-cream px-6 py-3 shadow-[4px_4px_0_0_var(--navy)]">
+            <img
+              src={logoXuxuzinho.url}
+              alt="Xuxuzinho"
+              className="h-12 w-auto"
+            />
+          </div>
 
           <p className="text-sm text-cream/90">
             Confeitaria artesanal · Pedidos pelo WhatsApp{" "}
