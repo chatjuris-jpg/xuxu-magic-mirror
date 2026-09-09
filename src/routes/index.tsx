@@ -29,8 +29,9 @@ import revelacaoBoloPersonalizado from "@/assets/revelacao-bolo-personalizado.jp
 import revelacaoBentoCake from "@/assets/revelacao-bento-cake.jpg.asset.json";
 import revelacaoBoloCha from "@/assets/revelacao-bolo-cha.jpg.asset.json";
 import revelacaoBoloBebe from "@/assets/revelacao-bolo-bebe.jpg.asset.json";
-import cupcakeMesversario2Meses from "@/assets/cupcake-mesversario-2-meses.jpg.asset.json";
 import cupcakeMesversario1Mes from "@/assets/cupcake-mesversario-1-mes.png.asset.json";
+import cupcakeMesversarioBorboleta from "@/assets/cupcake-mesversario-borboleta.jpg.asset.json";
+import cupcakeMesversarioFlor from "@/assets/cupcake-mesversario-flor.jpg.asset.json";
 import cupcakeMesversarioKit from "@/assets/cupcake-mesversario-kit.jpg.asset.json";
 import cupcakeMesversarioOnca from "@/assets/cupcake-mesversario-onca.jpg.asset.json";
 import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.json";
