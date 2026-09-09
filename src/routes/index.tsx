@@ -1530,7 +1530,7 @@ function Index() {
           </div>
 
           <a
-            href="https://instagram.com/xuxuzinho"
+            href="https://www.instagram.com/xuxuzinho_tentaciones?stkn=MXd1dDE2dzVnMW03eg=="
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 text-sm font-semibold text-cream/90 transition-opacity hover:opacity-80"
