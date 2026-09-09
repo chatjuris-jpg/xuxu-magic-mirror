@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
-import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
+
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
 import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
@@ -60,6 +60,9 @@ import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
 import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
 import refDinoMatteo from "@/assets/referencia-dino-matteo.png.asset.json";
 import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.json";
+import bentoVaquinhaLiz from "@/assets/bento-cake-vaquinha-liz.jpg.asset.json";
+import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
+import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -163,13 +166,14 @@ const NAV = [
   { label: "Como funciona", href: "#como-funciona" },
 ];
 
-const MONTHS = [
+const MONTHS_RAW = [
   {
     n: 1,
-    tema: "Homem-Aranha",
-    img: mes1HomemAranhaDante.url,
-    alt: "Bolo do primeiro mês decorado com tema Homem-Aranha e nome Dante",
-    emoji: "🕷️",
+    tema: "Fazendinha",
+    img: bentoVaquinhaLiz.url,
+    imgs: [bentoVaquinhaLiz.url, bentoHaku.url, bentoDinoAsafe.url],
+    alt: "Bento cake do primeiro mês decorado com vaquinha e mamadeira",
+    emoji: "🐮",
   },
   {
     n: 2,
@@ -249,6 +253,11 @@ const MONTHS = [
     emoji: "🚀",
   },
 ];
+
+const MONTHS = MONTHS_RAW.map((m) => ({
+  ...m,
+  imgs: m.imgs ?? [m.img],
+}));
 
 const BENEFITS = [
   {
@@ -784,22 +793,34 @@ function Cta({
 
 function Index() {
   const [mes, setMes] = useState(1);
+  const [mesSlide, setMesSlide] = useState(0);
   const [open, setOpen] = useState<number | null>(0);
   const [lightbox, setLightbox] = useState<{
-    productIndex: number;
+    images: string[];
+    alt: string;
     imageIndex: number;
   } | null>(null);
   const atual = MONTHS.find((m) => m.n === mes)!;
 
   const openLightbox = (productIndex: number, imageIndex: number) => {
-    setLightbox({ productIndex, imageIndex });
+    const product = PRODUCTS[productIndex];
+    if (!product) return;
+    const images = product.imgs || (product.img ? [product.img] : []);
+    if (images.length === 0) return;
+    setLightbox({
+      images,
+      alt: product.alt || product.title,
+      imageIndex,
+    });
+  };
+
+  const openMonthLightbox = (imageIndex: number) => {
+    setLightbox({ images: atual.imgs, alt: atual.alt, imageIndex });
   };
 
   const closeLightbox = () => setLightbox(null);
 
-  const lightboxProduct = lightbox ? PRODUCTS[lightbox.productIndex] : null;
-  const lightboxImages = lightboxProduct?.imgs ||
-    (lightboxProduct?.img ? [lightboxProduct.img] : []);
+  const lightboxImages = lightbox?.images ?? [];
 
   const goPrev = () => {
     if (!lightbox) return;
@@ -989,7 +1010,10 @@ function Index() {
               {MONTHS.map((m) => (
                 <button
                   key={m.n}
-                  onClick={() => setMes(m.n)}
+                  onClick={() => {
+                    setMes(m.n);
+                    setMesSlide(0);
+                  }}
                   aria-pressed={mes === m.n}
                   className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
                     mes === m.n
@@ -1003,13 +1027,58 @@ function Index() {
             </div>
 
             <div className="mx-auto mt-10 grid max-w-4xl items-center gap-8 rounded-[2rem] border-2 border-navy bg-cream p-6 text-navy shadow-[10px_10px_0_0_var(--navy)] md:grid-cols-2">
-              <img
-                key={atual.img}
-                src={atual.img}
-                alt={atual.alt}
-                loading="lazy"
-                className="aspect-square w-full rounded-[1.5rem] border-2 border-navy object-cover"
-              />
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => openMonthLightbox(mesSlide)}
+                  className="block w-full cursor-zoom-in"
+                  aria-label={`Ampliar foto do ${atual.n}º mês`}
+                >
+                  <img
+                    key={atual.imgs[mesSlide]}
+                    src={atual.imgs[mesSlide]}
+                    alt={atual.alt}
+                    loading="lazy"
+                    className="aspect-square w-full rounded-[1.5rem] border-2 border-navy object-cover"
+                  />
+                </button>
+                {atual.imgs.length > 1 && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMesSlide((s) =>
+                          s === 0 ? atual.imgs.length - 1 : s - 1,
+                        )
+                      }
+                      className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-navy bg-cream/90 p-1.5 text-navy shadow-[2px_2px_0_0_var(--navy)] transition-transform hover:-translate-y-[55%]"
+                      aria-label="Foto anterior"
+                    >
+                      <ChevronLeft className="size-4" />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMesSlide((s) => (s + 1) % atual.imgs.length)
+                      }
+                      className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-navy bg-cream/90 p-1.5 text-navy shadow-[2px_2px_0_0_var(--navy)] transition-transform hover:-translate-y-[55%]"
+                      aria-label="Próxima foto"
+                    >
+                      <ChevronRight className="size-4" />
+                    </button>
+                    <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+                      {atual.imgs.map((src, i) => (
+                        <span
+                          key={src}
+                          className={`h-2 w-2 rounded-full border border-navy ${
+                            i === mesSlide ? "bg-navy" : "bg-cream/80"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
               <div>
                 <span className="text-4xl">{atual.emoji}</span>
                 <h3 className="mt-3 text-3xl font-bold">
@@ -1447,13 +1516,13 @@ function Index() {
         </section>
       </main>
 
-      {lightbox && lightboxProduct && lightboxImages.length > 0 && (
+      {lightbox && lightboxImages.length > 0 && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/95 p-4 backdrop-blur-sm"
           onClick={closeLightbox}
           role="dialog"
           aria-modal="true"
-          aria-label={`Galeria de ${lightboxProduct.title}`}
+          aria-label="Galeria de fotos"
         >
           <button
             type="button"
@@ -1494,7 +1563,7 @@ function Index() {
           >
             <img
               src={lightboxImages[lightbox.imageIndex]}
-              alt={`${lightboxProduct.alt || lightboxProduct.title} — foto ${lightbox.imageIndex + 1}`}
+              alt={`${lightbox.alt} — foto ${lightbox.imageIndex + 1}`}
               className="max-h-[85vh] w-full object-contain"
             />
           </div>
