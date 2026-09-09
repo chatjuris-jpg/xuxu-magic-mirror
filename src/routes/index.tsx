@@ -467,6 +467,7 @@ const PRODUCTS: Product[] = [
       batizado5.url,
     ],
     alt: "Bolo de batizado e primeira comunhão decorado",
+    price: "A confirmar valor",
   },
   {
     title: "Vintage Cake",
