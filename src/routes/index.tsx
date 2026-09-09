@@ -570,19 +570,38 @@ function ProductCarousel({
   );
 }
 
-function ProductFigure({ p }: { p: Product }) {
+function ProductFigure({
+  p,
+  onImageClick,
+}: {
+  p: Product;
+  onImageClick?: (imageIndex: number) => void;
+}) {
   if (p.imgs && p.imgs.length > 0) {
-    return <ProductCarousel imgs={p.imgs} alt={p.alt || p.title} />;
+    return (
+      <ProductCarousel
+        imgs={p.imgs}
+        alt={p.alt || p.title}
+        onImageClick={onImageClick}
+      />
+    );
   }
 
   if (p.img) {
     return (
-      <img
-        src={p.img}
-        alt={p.alt || p.title}
-        loading="lazy"
-        className="h-full w-full object-cover"
-      />
+      <button
+        type="button"
+        onClick={() => onImageClick?.(0)}
+        className="relative h-full w-full cursor-zoom-in"
+        aria-label={`Ampliar imagem de ${p.title}`}
+      >
+        <img
+          src={p.img}
+          alt={p.alt || p.title}
+          loading="lazy"
+          className="pointer-events-none h-full w-full object-cover"
+        />
+      </button>
     );
   }
 
