@@ -1010,7 +1010,10 @@ function Index() {
               {MONTHS.map((m) => (
                 <button
                   key={m.n}
-                  onClick={() => setMes(m.n)}
+                  onClick={() => {
+                    setMes(m.n);
+                    setMesSlide(0);
+                  }}
                   aria-pressed={mes === m.n}
                   className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
                     mes === m.n
@@ -1024,13 +1027,58 @@ function Index() {
             </div>
 
             <div className="mx-auto mt-10 grid max-w-4xl items-center gap-8 rounded-[2rem] border-2 border-navy bg-cream p-6 text-navy shadow-[10px_10px_0_0_var(--navy)] md:grid-cols-2">
-              <img
-                key={atual.img}
-                src={atual.img}
-                alt={atual.alt}
-                loading="lazy"
-                className="aspect-square w-full rounded-[1.5rem] border-2 border-navy object-cover"
-              />
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => openMonthLightbox(mesSlide)}
+                  className="block w-full cursor-zoom-in"
+                  aria-label={`Ampliar foto do ${atual.n}º mês`}
+                >
+                  <img
+                    key={atual.imgs[mesSlide]}
+                    src={atual.imgs[mesSlide]}
+                    alt={atual.alt}
+                    loading="lazy"
+                    className="aspect-square w-full rounded-[1.5rem] border-2 border-navy object-cover"
+                  />
+                </button>
+                {atual.imgs.length > 1 && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMesSlide((s) =>
+                          s === 0 ? atual.imgs.length - 1 : s - 1,
+                        )
+                      }
+                      className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-navy bg-cream/90 p-1.5 text-navy shadow-[2px_2px_0_0_var(--navy)] transition-transform hover:-translate-y-[55%]"
+                      aria-label="Foto anterior"
+                    >
+                      <ChevronLeft className="size-4" />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMesSlide((s) => (s + 1) % atual.imgs.length)
+                      }
+                      className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-navy bg-cream/90 p-1.5 text-navy shadow-[2px_2px_0_0_var(--navy)] transition-transform hover:-translate-y-[55%]"
+                      aria-label="Próxima foto"
+                    >
+                      <ChevronRight className="size-4" />
+                    </button>
+                    <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+                      {atual.imgs.map((src, i) => (
+                        <span
+                          key={src}
+                          className={`h-2 w-2 rounded-full border border-navy ${
+                            i === mesSlide ? "bg-navy" : "bg-cream/80"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
               <div>
                 <span className="text-4xl">{atual.emoji}</span>
                 <h3 className="mt-3 text-3xl font-bold">
