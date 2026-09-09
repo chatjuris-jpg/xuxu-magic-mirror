@@ -1007,7 +1007,7 @@ function Index() {
             <div className="mx-auto max-w-2xl text-center">
               <p className="eyebrow">Mural de mesversários</p>
               <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-                Do 1º ao 12º mês: inspirações reais feitas com afeto.
+                Inspirações reais feitas com afeto.
               </h2>
               <p className="mt-4 text-navy/70">
                 Cenários fofos, acabamento impecável e o tamanho ideal para reunir a
