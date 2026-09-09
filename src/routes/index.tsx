@@ -67,6 +67,9 @@ import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
 import bentoMes3Aranha from "@/assets/bolo-homem-aranha-3meses.jpg.asset.json";
 import bentoMes3Coelho from "@/assets/bento-coelho-3meses.jpg.asset.json";
 import bentoMes3Abelhas from "@/assets/bento-abelhinhas-3meses.jpg.asset.json";
+import mes4DeRepente from "@/assets/mesversario-de-repente-4meses.jpg.asset.json";
+import mes4Girafa from "@/assets/bento-cake-mesversario-girafa.jpg.asset.json";
+import mes4BabyShark from "@/assets/bento-cake-mesversario-baby-shark.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -197,10 +200,11 @@ const MONTHS_RAW = [
   },
   {
     n: 4,
-    tema: "Pool Party",
-    img: mes4PoolFilipe.url,
-    alt: "Bolo do quarto mês decorado com tema Pool Party e nome Filipe",
-    emoji: "🏖️",
+    tema: "De repente",
+    img: mes4DeRepente.url,
+    imgs: [mes4DeRepente.url, mes4Girafa.url, mes4BabyShark.url],
+    alt: "Bolo do quarto mês decorado com a frase De repente 4 meses",
+    emoji: "🎉",
   },
   {
     n: 5,
