@@ -787,6 +787,21 @@ function Index() {
     );
   };
 
+  useEffect(() => {
+    if (!lightbox) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [lightbox, lightboxImages.length]);
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-cream text-navy">
       {/* FITA SUPERIOR */}
