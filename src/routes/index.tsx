@@ -996,11 +996,16 @@ function Index() {
                     <p className="mt-4 leading-relaxed text-navy/70">
                       {p.desc}
                     </p>
+                    {p.price && (
+                      <p className="mt-5 text-2xl font-bold text-navy">
+                        {p.price}
+                      </p>
+                    )}
                     <a
                       href={WA_ORCAMENTO}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-7 inline-flex w-fit items-center gap-2 rounded-full border-2 border-navy bg-cream px-7 py-3 text-sm font-bold text-navy transition-transform hover:-translate-y-0.5"
+                      className="mt-5 inline-flex w-fit items-center gap-2 rounded-full border-2 border-navy bg-cream px-7 py-3 text-sm font-bold text-navy transition-transform hover:-translate-y-0.5"
                     >
                       Pedir orçamento
                     </a>
