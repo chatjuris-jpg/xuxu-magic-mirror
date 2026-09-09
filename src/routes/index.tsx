@@ -259,7 +259,7 @@ const BENEFITS = [
 
 const POLAROIDS = MONTHS.map((m) => ({
   img: m.img,
-  cap: `${m.n}º mês · ${m.tema}`,
+  cap: m.tema,
   alt: m.alt,
 }));
 
