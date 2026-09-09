@@ -18,7 +18,9 @@ import mes10AuroraCecilia from "@/assets/mes10-aurora-cecilia.jpg.asset.json";
 import mes11FormaturaGui from "@/assets/mesversario-formatura-gui.jpg.asset.json";
 import mes11FormaturaCecilia from "@/assets/mesversario-11meses-formatura-cecilia.jpg.asset.json";
 import mes11Partiu1Ano from "@/assets/mesversario-11meses-partiu-1ano.jpg.asset.json";
-import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
+import mes12UpApolo from "@/assets/mes12-up-altas-aventuras-apolo.jpg.asset.json";
+import mes12Nala from "@/assets/mes12-nala-rei-leao.jpg.asset.json";
+import mes12UrsinhoMicael from "@/assets/mes12-ursinho-micael-1ano.jpg.asset.json";
 import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
 import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
 import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
@@ -276,10 +278,11 @@ const MONTHS_RAW = [
   },
   {
     n: 12,
-    tema: "Astronauta",
-    img: mes12AstronautaGabriel.url,
-    alt: "Bolo do décimo segundo mês decorado com tema Astronauta e nome Gabriel",
-    emoji: "🚀",
+    tema: "1 ano",
+    img: mes12UpApolo.url,
+    imgs: [mes12UpApolo.url, mes12Nala.url, mes12UrsinhoMicael.url],
+    alt: "Bolo de 1 ano decorado com tema Up Altas Aventuras e nome Apolo",
+    emoji: "🎂",
   },
 ];
 
