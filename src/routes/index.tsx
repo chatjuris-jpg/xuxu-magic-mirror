@@ -5,6 +5,9 @@ import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
+import mes7SuperMario from "@/assets/mes7-super-mario.jpg.asset.json";
+import mes7MeninasSuperpoderosas from "@/assets/mes7-meninas-superpoderosas.jpg.asset.json";
+import mes7BrancaDeNeve from "@/assets/mes7-branca-de-neve.jpg.asset.json";
 import mes8Papagaio from "@/assets/mes8-papagaio.png.asset.json";
 import mes8EightAzul from "@/assets/mes8-eight-azul.jpg.asset.json";
 import mes8AliceArcoIris from "@/assets/mes8-alice-arcoiris.jpg.asset.json";
@@ -240,10 +243,11 @@ const MONTHS_RAW = [
   },
   {
     n: 7,
-    tema: "Natal",
-    img: mes7NatalRafaela.url,
-    alt: "Bolo do sétimo mês decorado com tema Natal e nome Rafaela",
-    emoji: "🎄",
+    tema: "Super Mario",
+    img: mes7SuperMario.url,
+    imgs: [mes7SuperMario.url, mes7MeninasSuperpoderosas.url, mes7BrancaDeNeve.url, mes7NatalRafaela.url],
+    alt: "Bolo do sétimo mês decorado com tema Super Mario e nome Anne",
+    emoji: "🍄",
   },
   {
     n: 8,
