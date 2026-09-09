@@ -34,6 +34,8 @@ import muralFloresCecilia from "@/assets/mural-flores-cecilia.jpg.asset.json";
 import muralChavesIcaro from "@/assets/mural-chaves-icaro.jpg.asset.json";
 import muralCarrosThales from "@/assets/mural-carros-thales.jpg.asset.json";
 import muralPrincesaAurora from "@/assets/mural-princesa-aurora.jpg.asset.json";
+import muralStella from "@/assets/bento-cake-stella-1mes.jpg.asset.json";
+import muralSophiaBailarina from "@/assets/bento-cake-bailarina-sophia.jpg.asset.json";
 import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
 import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
 import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
@@ -379,6 +381,16 @@ const POLAROIDS = [
     img: muralPrincesaAurora.url,
     cap: "Aurora",
     alt: "Bento cake da princesa Aurora de 1 ano",
+  },
+  {
+    img: muralStella.url,
+    cap: "Stella",
+    alt: "Bento cake rosa com número 1 de chantilly e flores para 1 mês da Stella",
+  },
+  {
+    img: muralSophiaBailarina.url,
+    cap: "Sophia",
+    alt: "Bolo decorado com bailarina e flores para 4 anos da Sophia",
   },
 ];
 
