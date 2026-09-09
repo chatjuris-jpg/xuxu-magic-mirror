@@ -1019,10 +1019,10 @@ function Index() {
 
             <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {POLAROIDS.map((p, i) => (
-                <figure
+              <figure
                   key={p.img + i}
                   style={{ rotate: i % 2 === 0 ? "-2.5deg" : "2deg" }}
-                  className="rounded-xl border-2 border-navy bg-cream p-3 pb-1 shadow-[8px_8px_0_0_var(--navy)] transition-transform duration-300 hover:rotate-0 hover:-translate-y-1.5"
+                  className="rounded-xl border-2 border-navy bg-cream p-3 shadow-[8px_8px_0_0_var(--navy)] transition-transform duration-300 hover:rotate-0 hover:-translate-y-1.5"
                 >
                   <img
                     src={p.img}
@@ -1030,9 +1030,6 @@ function Index() {
                     loading="lazy"
                     className="h-64 w-full rounded-md object-cover"
                   />
-                  <figcaption className="font-script py-3 text-center text-2xl text-plum">
-                    {p.cap}
-                  </figcaption>
                 </figure>
               ))}
             </div>
