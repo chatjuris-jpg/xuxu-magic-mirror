@@ -1038,28 +1038,26 @@ function Index() {
         </section>
 
         {/* INSPIRAÇÕES — COMO PODEMOS FAZER O SEU BOLINHO */}
-        <section id="inspiracoes" className="bg-cream py-20">
+        <section id="inspiracoes" className="bg-cream py-14">
           <div className="section-shell">
             <div className="mx-auto max-w-2xl text-center">
               <p className="eyebrow">Inspire-se</p>
-              <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+              <h2 className="mt-3 text-3xl font-bold md:text-4xl">
                 Veja como podemos fazer o seu bolinho
               </h2>
-              <p className="mt-4 text-navy/70">
+              <p className="mt-3 text-sm text-navy/70">
                 Temas personalizados, cores que combinam com a festinha e aquele
                 detalhe feito à mão que só a Xuxuzinho tem.
               </p>
             </div>
 
-            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {INSPIRATIONS.map((item, i) => (
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {INSPIRATIONS.map((item) => (
                 <div
                   key={item.title}
-                  className={`group relative overflow-hidden rounded-[2rem] border-2 border-navy bg-white p-3 shadow-[6px_6px_0_0_var(--navy)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_0_0_var(--navy)] ${
-                    i === 0 || i === 3 ? "lg:col-span-2" : ""
-                  } ${i === 2 ? "sm:row-span-2" : ""}`}
+                  className="group overflow-hidden rounded-2xl border border-navy/10 bg-white p-2 shadow-[3px_3px_0_0_color-mix(in_oklab,var(--navy)_10%,transparent)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[5px_5px_0_0_color-mix(in_oklab,var(--navy)_14%,transparent)]"
                 >
-                  <div className="relative aspect-square overflow-hidden rounded-[1.5rem] border border-navy/10">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                     <img
                       src={item.img}
                       alt={item.alt}
@@ -1067,22 +1065,20 @@ function Index() {
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="mt-3 flex items-center justify-between px-1">
+                  <div className="mt-2 flex items-center justify-between px-1 py-1">
                     <div>
-                      <p className="font-display text-lg font-semibold text-navy">
+                      <p className="font-display text-base font-semibold text-navy">
                         {item.title}
                       </p>
                       <p className="text-xs text-navy/60">{item.detail}</p>
                     </div>
-                    <span className="flex size-9 items-center justify-center rounded-full bg-caramel text-navy">
-                      <Heart className="size-4 fill-navy" />
-                    </span>
+                    <Heart className="size-4 text-caramel/80 transition-colors group-hover:text-caramel" />
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 text-center">
+            <div className="mt-10 text-center">
               <Cta href={WA_ORCAMENTO} variant="plum">
                 <MessageCircle className="size-4" /> Quero uma ideia exclusiva
               </Cta>
