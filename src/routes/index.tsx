@@ -917,8 +917,8 @@ function Index() {
               <div className="bg-navy p-8 text-cream md:p-12 lg:p-14">
                 <p className="eyebrow !text-caramel">✦ Um carinho que continua</p>
                 <h2 className="mt-4 text-3xl font-bold leading-tight text-cream md:text-4xl">
-                  Nos 6 primeiros meses com a gente você ganha um brinde incrível
-                  personalizado com a nossa marca — e no 11º mês também.
+                  Comemorando os 11 meses com a gente você ganha brindes
+                  exclusivos ao longo da jornada.
                 </h2>
                 <p className="mt-5 text-sm leading-relaxed text-cream/80">
                   É o nosso jeitinho de acompanhar cada fase e deixar o álbum do
