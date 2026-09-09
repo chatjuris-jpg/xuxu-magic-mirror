@@ -478,7 +478,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Smash Cake",
-    desc: "Aquela bagunça gostosa do primeiro aninho: bolo pequeno, lindo e feito para ser destruído com as mãozinhas.",
+    desc: "Aquela bagunça gostosa do primeiro aninho, feito para ser destruído com as mãozinhas.",
     bg: "#EFC3D4",
     imgs: [
       smashCakeNakedFlowers.url,
