@@ -5,7 +5,9 @@ import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
-import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
+import mes8Papagaio from "@/assets/mes8-papagaio.png.asset.json";
+import mes8EightAzul from "@/assets/mes8-eight-azul.jpg.asset.json";
+import mes8AliceArcoIris from "@/assets/mes8-alice-arcoiris.jpg.asset.json";
 import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
 import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
