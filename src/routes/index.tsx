@@ -1741,8 +1741,9 @@ function Index() {
           <img
             src={xuxuzinhoLogoBranca.url}
             alt="Xuxuzinho Confeitaria Artesanal"
-            className="h-16 w-auto object-contain drop-shadow-sm"
+            className="h-24 w-auto object-contain drop-shadow-sm"
           />
+
 
           <p className="text-sm text-cream/90">
             Confeitaria artesanal · Pedidos pelo WhatsApp{" "}
