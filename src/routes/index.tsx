@@ -179,10 +179,11 @@ const MONTHS_RAW = [
   },
   {
     n: 2,
-    tema: "Poderoso Nenezinho",
-    img: mes2PoderosoNenezinho.url,
-    alt: "Bolo do segundo mês decorado com o tema Poderoso Nenezinho",
-    emoji: "🧸",
+    tema: "Frutinha",
+    img: bentoMes2Frutinha.url,
+    imgs: [bentoMes2Frutinha.url, bentoMes2Cinderela.url],
+    alt: "Bolo do segundo mês decorado com frutinhas e nome Sara",
+    emoji: "🍊",
   },
   {
     n: 3,
