@@ -1053,7 +1053,7 @@ function Index() {
               <h2 className="mt-4 text-4xl font-bold md:text-5xl">
                 Quem celebra com a gente recomenda:
               </h2>
-              <p className="font-script mx-auto mt-6 max-w-2xl -rotate-1 rounded-3xl border-2 border-navy bg-caramel/50 px-6 py-5 text-3xl text-plum md:text-4xl">
+              <p className="font-display mx-auto mt-6 max-w-2xl rounded-3xl border-2 border-navy bg-caramel/50 px-6 py-5 text-2xl text-navy md:text-3xl">
                 “Mais do que um bolo lindo nas fotos, todo mundo elogiou o sabor!”
               </p>
               <p className="mt-4 text-sm font-semibold text-navy/60">
