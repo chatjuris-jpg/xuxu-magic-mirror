@@ -892,18 +892,18 @@ function Index() {
               </h2>
             </div>
 
-            <div className="mt-14 grid gap-8 md:grid-cols-3">
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
               {BENEFITS.map((b) => (
                 <article
                   key={b.title}
                   style={{ rotate: b.tilt }}
-                  className="rounded-[2rem] border-2 border-navy bg-cream-deep p-8 text-center shadow-[8px_8px_0_0_var(--navy)] transition-transform duration-300 hover:rotate-0 hover:-translate-y-1"
+                  className="rounded-2xl border-2 border-navy bg-cream-deep p-5 text-center shadow-[5px_5px_0_0_var(--navy)] transition-transform duration-300 hover:rotate-0 hover:-translate-y-1"
                 >
-                  <span className="mx-auto flex size-16 items-center justify-center rounded-2xl border-2 border-navy bg-caramel text-navy">
-                    <b.icon className="size-7" />
+                  <span className="mx-auto flex size-12 items-center justify-center rounded-xl border-2 border-navy bg-caramel text-navy">
+                    <b.icon className="size-5" />
                   </span>
-                  <h3 className="mt-5 text-xl font-bold">{b.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-navy/70">{b.text}</p>
+                  <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-navy/70">{b.text}</p>
                 </article>
               ))}
             </div>
