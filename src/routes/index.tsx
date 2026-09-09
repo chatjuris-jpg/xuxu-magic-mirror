@@ -268,10 +268,11 @@ const MONTHS_RAW = [
   },
   {
     n: 11,
-    tema: "Marinheiro",
-    img: mes11BarcoHeitorNovo.url,
-    alt: "Bolo do décimo primeiro mês decorado com barquinho e nome Heitor",
-    emoji: "⛵",
+    tema: "Formatura",
+    img: mes11FormaturaGui.url,
+    imgs: [mes11FormaturaGui.url, mes11FormaturaCecilia.url, mes11Partiu1Ano.url],
+    alt: "Bolo do décimo primeiro mês decorado com tema formatura e pódio",
+    emoji: "🎓",
   },
   {
     n: 12,
