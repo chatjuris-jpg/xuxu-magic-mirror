@@ -642,7 +642,7 @@ const FAQ = [
   },
   {
     q: "Vocês entregam?",
-    a: "Sim, atendemos o Tatuapé e diversas regiões de São Paulo. Consulte a disponibilidade e o valor da entrega para o seu endereço.",
+    a: "Você tem a opção de retirar pessoalmente ou solicitar um aplicativo de entrega.",
   },
   {
     q: "Como funciona o pagamento?",
