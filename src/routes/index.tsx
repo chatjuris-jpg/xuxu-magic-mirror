@@ -1389,7 +1389,7 @@ function Index() {
               title="Localização Xuxuzinho"
               src="https://www.google.com/maps?q=R.+Manuel+de+Atouguia,+14,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+03313-020&output=embed"
               width="100%"
-              height="280"
+              height="320"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
