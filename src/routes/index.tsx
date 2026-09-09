@@ -1139,7 +1139,7 @@ function Index() {
                     loading="lazy"
                     className="h-64 w-full rounded-md object-cover"
                   />
-                  <figcaption className="font-script py-3 text-center text-2xl text-plum">
+                  <figcaption className="font-display py-3 text-center text-2xl text-plum">
                     {p.cap}
                   </figcaption>
                 </figure>
