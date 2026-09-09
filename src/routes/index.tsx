@@ -1113,22 +1113,22 @@ function Index() {
               </h2>
             </div>
 
-            <div className="mt-16 space-y-8">
+            <div className="mt-10 space-y-4">
               {STEPS.map((s, i) => (
                 <article
                   key={s.n}
-                  className={`flex flex-col items-center gap-6 rounded-[2rem] border-2 border-cream/30 bg-cream/5 p-8 sm:flex-row ${
+                  className={`flex flex-col items-center gap-4 rounded-2xl border-2 border-cream/30 bg-cream/5 p-5 sm:flex-row ${
                     i % 2 === 1 ? "sm:flex-row-reverse sm:text-right" : ""
                   }`}
                 >
-                  <span className="font-display flex size-20 shrink-0 items-center justify-center rounded-full border-2 border-navy bg-caramel text-3xl font-bold text-navy">
+                  <span className="font-display flex size-14 shrink-0 items-center justify-center rounded-full border-2 border-navy bg-caramel text-2xl font-bold text-navy">
                     {s.n}
                   </span>
                   <div>
-                    <h3 className="text-2xl font-bold">
+                    <h3 className="text-lg font-bold">
                       {s.emoji} {s.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-cream/75">
+                    <p className="mt-1 text-xs leading-snug text-cream/75">
                       {s.text}
                     </p>
                   </div>
