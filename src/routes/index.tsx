@@ -626,7 +626,7 @@ const TESTIMONIALS = [
 const FAQ = [
   {
     q: "Com quanta antecedência preciso encomendar?",
-    a: "Recomendamos reservar a data com pelo menos 3 dias de antecedência. Como as vagas na agenda mensal são limitadas, quanto antes melhor — muitas famílias já deixam os 12 meses combinados.",
+    a: "Temos bolos a pronta entrega, dependendo da decoração somente com 3 dias de antecedência.",
   },
   {
     q: "Posso mandar uma foto de inspiração?",
