@@ -260,6 +260,7 @@ const MONTHS_RAW = [
     n: 10,
     tema: "Minions",
     img: mes10MinionOliver.url,
+    imgs: [mes10MinionOliver.url, mes10MikeWazowski.url, mes10AuroraCecilia.url],
     alt: "Bolo do décimo mês decorado com tema Minion e nome Oliver",
     emoji: "🍌",
   },
