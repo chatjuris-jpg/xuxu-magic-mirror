@@ -49,6 +49,8 @@ import cupcakeMesversarioLeao from "@/assets/cupcake-mesversario-leao.jpg.asset.
 import kitCupcakeMesversario from "@/assets/kit-cupcake-mesversario.png.asset.json";
 import kitBorboletaPersonalizado from "@/assets/kit-borboleta-personalizado.jpg.asset.json";
 import kitPapagaioMesversario from "@/assets/kit-papagaio-mesversario.png.asset.json";
+import kitMesversarioLadraoSono from "@/assets/kit-mesversario-ladrao-sono.png.asset.json";
+import kitMesversarioCapitaoAmerica from "@/assets/kit-mesversario-capitao-america.png.asset.json";
 import papelArrozAniversario from "@/assets/papel-arroz-aniversario.jpg.asset.json";
 import papelArrozDanilo9Meses from "@/assets/papel-arroz-danilo-9meses.jpg.asset.json";
 import papelArrozToyStory from "@/assets/papel-arroz-toy-story.jpg.asset.json";
@@ -462,6 +464,8 @@ const PRODUCTS: Product[] = [
     title: "Kit Mesversário",
     desc: "Uma composição pensada para dar um upgrade na comemoração.",
     bg: "#C9E4D4",
+    imgs: [kitMesversarioLadraoSono.url, kitMesversarioCapitaoAmerica.url],
+    alt: "Kit mesversário com bento cake e docinhos personalizados",
     price: "a partir de R$102,00",
   },
   {
