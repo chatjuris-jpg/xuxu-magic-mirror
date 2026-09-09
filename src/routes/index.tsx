@@ -67,6 +67,9 @@ import {
   Heart,
   MapPin,
   ExternalLink,
+  ChevronLeft,
+  ChevronRight,
+  X,
 } from "lucide-react";
 
 const WA_TEMA =
