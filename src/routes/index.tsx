@@ -65,6 +65,9 @@ import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
 import bentoMes2Frutinha from "@/assets/bento-cake-mesversario-frutinha.jpg.asset.json";
 import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
+import bentoMes3Aranha from "@/assets/bolo-homem-aranha-3meses.jpg.asset.json";
+import bentoMes3Coelho from "@/assets/bento-coelho-3meses.jpg.asset.json";
+import bentoMes3Abelhas from "@/assets/bento-abelhinhas-3meses.jpg.asset.json";
 
 import {
   MessageCircle,
