@@ -1371,10 +1371,6 @@ function Index() {
               alt={`${lightboxProduct.alt || lightboxProduct.title} — foto ${lightbox.imageIndex + 1}`}
               className="max-h-[85vh] w-full object-contain"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-navy/80 px-4 py-3 text-center text-sm font-semibold text-cream">
-              {lightboxProduct.title} — foto {lightbox.imageIndex + 1} de{" "}
-              {lightboxImages.length}
-            </div>
           </div>
         </div>
       )}
