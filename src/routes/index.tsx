@@ -399,7 +399,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Kit Mesversário",
-    desc: "Uma composição pensada para deixar a mesa pronta: bolo e docinhos combinando com o tema escolhido.",
+    desc: "Uma composição pensada para dar um upgrade na comemoração.",
     bg: "#C9E4D4",
     price: "a partir de R$102,00",
   },
