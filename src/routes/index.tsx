@@ -638,7 +638,7 @@ const FAQ = [
   },
   {
     q: "Quais são os sabores disponíveis?",
-    a: "Temos massas e recheios clássicos e especiais — chocolate, ninho, brigadeiro, morango, doce de leite e mais. Consulte a lista completa no WhatsApp.",
+    a: "Temos massas e recheios clássicos e especiais — chocolate, ninho, brigadeiro, doce de leite e mais. Consulte a lista completa no WhatsApp.",
   },
   {
     q: "Vocês entregam?",
