@@ -15,7 +15,9 @@ import mes9FlorDelicado from "@/assets/bento-cake-flor-delicado-9meses.jpg.asset
 import mes10MinionOliver from "@/assets/mes10-minion-oliver.jpeg.asset.json";
 import mes10MikeWazowski from "@/assets/mes10-mike-wazowski.jpg.asset.json";
 import mes10AuroraCecilia from "@/assets/mes10-aurora-cecilia.jpg.asset.json";
-import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
+import mes11FormaturaGui from "@/assets/mesversario-formatura-gui.jpg.asset.json";
+import mes11FormaturaCecilia from "@/assets/mesversario-11meses-formatura-cecilia.jpg.asset.json";
+import mes11Partiu1Ano from "@/assets/mesversario-11meses-partiu-1ano.jpg.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
 import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
 import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
@@ -266,10 +268,11 @@ const MONTHS_RAW = [
   },
   {
     n: 11,
-    tema: "Marinheiro",
-    img: mes11BarcoHeitorNovo.url,
-    alt: "Bolo do décimo primeiro mês decorado com barquinho e nome Heitor",
-    emoji: "⛵",
+    tema: "Formatura",
+    img: mes11FormaturaGui.url,
+    imgs: [mes11FormaturaGui.url, mes11FormaturaCecilia.url, mes11Partiu1Ano.url],
+    alt: "Bolo do décimo primeiro mês decorado com tema formatura e pódio",
+    emoji: "🎓",
   },
   {
     n: 12,
