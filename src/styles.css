@@ -80,8 +80,8 @@
   --cream-deep: oklch(0.955 0.026 72);
   --navy: oklch(0.268 0.048 265);
   --plum: oklch(0.596 0.088 260);
-  --caramel: oklch(0.775 0.075 55);
-  --caramel-deep: oklch(0.7 0.1 52);
+  --caramel: oklch(0.764 0.044 245);
+  --caramel-deep: oklch(0.68 0.05 245);
 
   --background: oklch(0.978 0.018 75);
   --foreground: oklch(0.268 0.048 265);
