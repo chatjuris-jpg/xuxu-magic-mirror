@@ -73,6 +73,7 @@ import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
 import bentoMes2Frutinha from "@/assets/bento-cake-mesversario-frutinha.jpg.asset.json";
 import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
+import mes2Duda2Meses from "@/assets/mes2-duda-2meses.jpg.asset.json";
 import bentoMes3Aranha from "@/assets/bolo-homem-aranha-3meses.jpg.asset.json";
 import bentoMes3Coelho from "@/assets/bento-coelho-3meses.jpg.asset.json";
 import bentoMes3Abelhas from "@/assets/bento-abelhinhas-3meses.jpg.asset.json";
@@ -199,11 +200,11 @@ const MONTHS_RAW = [
   },
   {
     n: 2,
-    tema: "Frutinha",
-    img: bentoMes2Frutinha.url,
-    imgs: [bentoMes2Frutinha.url, bentoMes2Cinderela.url],
-    alt: "Bolo do segundo mês decorado com frutinhas e nome Sara",
-    emoji: "🍊",
+    tema: "Jardim",
+    img: mes2Duda2Meses.url,
+    imgs: [mes2Duda2Meses.url, bentoMes2Frutinha.url, bentoMes2Cinderela.url],
+    alt: "Bolo do segundo mês decorado com passarinhos, flores e nome Duda",
+    emoji: "🌸",
   },
   {
     n: 3,
