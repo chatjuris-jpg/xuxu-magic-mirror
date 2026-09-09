@@ -1031,23 +1031,15 @@ function Index() {
 
             <div className="mx-auto mt-10 grid max-w-3xl grid-cols-4 gap-3 sm:grid-cols-6">
               {MONTHS.map((m) => (
-                <button
+                <MonthButton
                   key={m.n}
-                  type="button"
-                  onClick={() => {
-                    console.log("CLICK REACT MES", m.n);
-                    setMes(m.n);
+                  m={m}
+                  active={mes === m.n}
+                  onSelect={(n) => {
+                    setMes(n);
                     setMesSlide(0);
                   }}
-                  aria-pressed={mes === m.n}
-                  className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
-                    mes === m.n
-                      ? "bg-caramel text-navy shadow-[4px_4px_0_0_var(--navy)]"
-                      : "bg-cream/90 text-navy/70"
-                  }`}
-                >
-                  {m.n}º
-                </button>
+                />
               ))}
             </div>
 
