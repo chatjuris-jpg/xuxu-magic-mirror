@@ -515,7 +515,7 @@ function ProductCarousel({
 }: {
   imgs: string[];
   alt: string;
-  onImageClick?: (imageIndex: number) => void;
+  onImageClick: ((imageIndex: number) => void) | undefined;
 }) {
   const [index, setIndex] = useState(0);
 
