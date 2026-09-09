@@ -793,22 +793,34 @@ function Cta({
 
 function Index() {
   const [mes, setMes] = useState(1);
+  const [mesSlide, setMesSlide] = useState(0);
   const [open, setOpen] = useState<number | null>(0);
   const [lightbox, setLightbox] = useState<{
-    productIndex: number;
+    images: string[];
+    alt: string;
     imageIndex: number;
   } | null>(null);
   const atual = MONTHS.find((m) => m.n === mes)!;
 
   const openLightbox = (productIndex: number, imageIndex: number) => {
-    setLightbox({ productIndex, imageIndex });
+    const product = PRODUCTS[productIndex];
+    if (!product) return;
+    const images = product.imgs || (product.img ? [product.img] : []);
+    if (images.length === 0) return;
+    setLightbox({
+      images,
+      alt: product.alt || product.title,
+      imageIndex,
+    });
+  };
+
+  const openMonthLightbox = (imageIndex: number) => {
+    setLightbox({ images: atual.imgs, alt: atual.alt, imageIndex });
   };
 
   const closeLightbox = () => setLightbox(null);
 
-  const lightboxProduct = lightbox ? PRODUCTS[lightbox.productIndex] : null;
-  const lightboxImages = lightboxProduct?.imgs ||
-    (lightboxProduct?.img ? [lightboxProduct.img] : []);
+  const lightboxImages = lightbox?.images ?? [];
 
   const goPrev = () => {
     if (!lightbox) return;
