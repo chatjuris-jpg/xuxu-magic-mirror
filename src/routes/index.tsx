@@ -187,10 +187,11 @@ const MONTHS_RAW = [
   },
   {
     n: 3,
-    tema: "Cinderela",
-    img: mes3RafaelaCinderela.url,
-    alt: "Bolo do terceiro mês decorado com o tema Cinderela e nome Rafaela",
-    emoji: "🌷",
+    tema: "Homem-Aranha",
+    img: bentoMes3Aranha.url,
+    imgs: [bentoMes3Aranha.url, bentoMes3Coelho.url, bentoMes3Abelhas.url],
+    alt: "Bolo do terceiro mês decorado com o tema Homem-Aranha",
+    emoji: "🕷️",
   },
   {
     n: 4,
