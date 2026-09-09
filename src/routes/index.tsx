@@ -65,6 +65,8 @@ import {
   Instagram,
   Gift,
   Heart,
+  MapPin,
+  ExternalLink,
 } from "lucide-react";
 
 const WA_TEMA =
