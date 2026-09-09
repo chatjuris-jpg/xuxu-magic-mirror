@@ -451,7 +451,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Batizado e 1ª Comunhão",
-    desc: "Bolos e doces delicados para momentos de fé e celebração em família, com decoração elegante e singela.",
+    desc: "Bolos e doces delicados para momentos de fé e celebração em família, com decoração elegante.",
     bg: "#E8E4F3",
     imgs: [
       batizado1.url,
