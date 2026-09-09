@@ -4,8 +4,6 @@ import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 
-
-import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
 import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
 import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
@@ -73,6 +71,9 @@ import mes4BabyShark from "@/assets/bento-cake-mesversario-baby-shark.jpg.asset.
 import mes5Jurassic from "@/assets/bolo-dinossauro-jurassic-park.png.asset.json";
 import mes5Miguel from "@/assets/bento-cake-mesversario-miguel.jpg.asset.json";
 import mes5Ovelha from "@/assets/mesversario-ovelha-isaac.jpg.asset.json";
+import mes6UpMatteo from "@/assets/bento-cake-up-matteo-6meses.jpg.asset.json";
+import mes6FlorIris from "@/assets/bento-cake-flor-iris-6meses.jpg.asset.json";
+import mes6FrutasJoaoLucca from "@/assets/bento-cake-frutas-joao-lucca-6meses.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -219,10 +220,11 @@ const MONTHS_RAW = [
   },
   {
     n: 6,
-    tema: "Frutinhas",
-    img: mes6FrutasMiguelNovo.url,
-    alt: "Bolo do sexto mês decorado com frutinhas coloridas e nome Miguel",
-    emoji: "🥑",
+    tema: "Up",
+    img: mes6UpMatteo.url,
+    imgs: [mes6UpMatteo.url, mes6FlorIris.url, mes6FrutasJoaoLucca.url],
+    alt: "Bolo do sexto mês decorado com tema Up Altas Aventuras e nome Matteo",
+    emoji: "🎈",
   },
   {
     n: 7,
