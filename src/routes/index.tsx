@@ -379,6 +379,7 @@ type Product = {
   img?: string;
   imgs?: string[];
   alt?: string;
+  price?: string;
 };
 
 const PRODUCTS: Product[] = [
