@@ -24,6 +24,16 @@ import mes11Partiu1Ano from "@/assets/mesversario-11meses-partiu-1ano.jpg.asset.
 import mes12UpApolo from "@/assets/mes12-up-altas-aventuras-apolo.jpg.asset.json";
 import mes12Nala from "@/assets/mes12-nala-rei-leao.jpg.asset.json";
 import mes12UrsinhoMicael from "@/assets/mes12-ursinho-micael-1ano.jpg.asset.json";
+import muralSininhoMariaClara from "@/assets/mural-sininho-maria-clara.webp.asset.json";
+import muralVaquinhaAlana from "@/assets/mural-vaquinha-alana.jpg.asset.json";
+import muralUrsinhoMatteo from "@/assets/mural-ursinho-matteo.jpg.asset.json";
+import muralPoohJoaoPedro from "@/assets/mural-pooh-joao-pedro.jpg.asset.json";
+import muralMickey from "@/assets/mural-mickey.jpg.asset.json";
+import muralLimaoSofia from "@/assets/mural-limao-sofia.jpg.asset.json";
+import muralFloresCecilia from "@/assets/mural-flores-cecilia.jpg.asset.json";
+import muralChavesIcaro from "@/assets/mural-chaves-icaro.jpg.asset.json";
+import muralCarrosThales from "@/assets/mural-carros-thales.jpg.asset.json";
+import muralPrincesaAurora from "@/assets/mural-princesa-aurora.jpg.asset.json";
 import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
 import batizado2 from "@/assets/bolo_para_batizado.jpg.asset.json";
 import batizado3 from "@/assets/bolo_para_1_comunhao.jpg.asset.json";
@@ -319,11 +329,58 @@ const BENEFITS = [
   },
 ];
 
-const POLAROIDS = MONTHS.map((m) => ({
-  img: m.img,
-  cap: m.tema,
-  alt: m.alt,
-}));
+const POLAROIDS = [
+  {
+    img: muralSininhoMariaClara.url,
+    cap: "Maria Clara",
+    alt: "Bolo decorado com tema Sininho, flores e cogumelos para 1 mês da Maria Clara",
+  },
+  {
+    img: muralVaquinhaAlana.url,
+    cap: "Alana",
+    alt: "Bento cake com vaquinha e frase 1 mês só pensando em tetê para a Alana",
+  },
+  {
+    img: muralUrsinhoMatteo.url,
+    cap: "Matteo",
+    alt: "Bento cake com ursinho marrom e corações dourados de 1 mês do Matteo",
+  },
+  {
+    img: muralPoohJoaoPedro.url,
+    cap: "João Pedro",
+    alt: "Bento cake do Ursinho Pooh com abelhinhas de 4 meses do João Pedro",
+  },
+  {
+    img: muralMickey.url,
+    cap: "Mickey",
+    alt: "Bento cake do Mickey de 3 meses",
+  },
+  {
+    img: muralLimaoSofia.url,
+    cap: "Sofia",
+    alt: "Bento cake decorado com limões de 5 meses da Sofia",
+  },
+  {
+    img: muralFloresCecilia.url,
+    cap: "Cecília",
+    alt: "Bento cake delicado com folhas de 1 mês da Cecília",
+  },
+  {
+    img: muralChavesIcaro.url,
+    cap: "Ícaro",
+    alt: "Bento cake com tema Chaves de 11 meses do Ícaro",
+  },
+  {
+    img: muralCarrosThales.url,
+    cap: "Thales",
+    alt: "Bolo vermelho do Carros de 8 meses do Thales",
+  },
+  {
+    img: muralPrincesaAurora.url,
+    cap: "Aurora",
+    alt: "Bento cake da princesa Aurora de 1 ano",
+  },
+];
 
 /* Ilustrações em CSS para os cartões de produto */
 const artCupcake = (
