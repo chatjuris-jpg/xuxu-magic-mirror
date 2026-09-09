@@ -52,6 +52,11 @@ import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
 import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
+import refCarrinhosTheo from "@/assets/referencia-carrinhos-theo.png.asset.json";
+import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
+import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
+import refDinoMatteo from "@/assets/referencia-dino-matteo.png.asset.json";
+import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.json";
 
 import {
   MessageCircle,
