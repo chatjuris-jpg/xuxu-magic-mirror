@@ -508,7 +508,15 @@ const PRODUCTS: Product[] = [
   },
 ];
 
-function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
+function ProductCarousel({
+  imgs,
+  alt,
+  onImageClick,
+}: {
+  imgs: string[];
+  alt: string;
+  onImageClick?: (imageIndex: number) => void;
+}) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -526,13 +534,20 @@ function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {imgs.map((src, i) => (
-          <img
+          <button
             key={src}
-            src={src}
-            alt={`${alt} — foto ${i + 1}`}
-            loading="lazy"
-            className="h-full w-full shrink-0 object-cover"
-          />
+            type="button"
+            onClick={() => onImageClick?.(i)}
+            className="relative h-full w-full shrink-0 cursor-zoom-in p-0"
+            aria-label={`Ampliar foto ${i + 1} de ${alt}`}
+          >
+            <img
+              src={src}
+              alt={`${alt} — foto ${i + 1}`}
+              loading="lazy"
+              className="pointer-events-none h-full w-full object-cover"
+            />
+          </button>
         ))}
       </div>
       <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
@@ -541,7 +556,10 @@ function ProductCarousel({ imgs, alt }: { imgs: string[]; alt: string }) {
             key={src}
             type="button"
             aria-label={`Ver foto ${i + 1}`}
-            onClick={() => setIndex(i)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIndex(i);
+            }}
             className={`size-2.5 rounded-full border border-navy transition-colors ${
               i === index ? "bg-navy" : "bg-card/70"
             }`}
