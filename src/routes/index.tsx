@@ -4,7 +4,7 @@ import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 
-import mes5PoderosoMiguel from "@/assets/mes-5-poderoso-miguel.png.asset.json";
+
 import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
 import mes8SolBellaNovo from "@/assets/mes-8-sol-bella-novo.png.asset.json";
@@ -70,6 +70,9 @@ import bentoMes3Abelhas from "@/assets/bento-abelhinhas-3meses.jpg.asset.json";
 import mes4DeRepente from "@/assets/mesversario-de-repente-4meses.jpg.asset.json";
 import mes4Girafa from "@/assets/bento-cake-mesversario-girafa.jpg.asset.json";
 import mes4BabyShark from "@/assets/bento-cake-mesversario-baby-shark.jpg.asset.json";
+import mes5Jurassic from "@/assets/bolo-dinossauro-jurassic-park.png.asset.json";
+import mes5Miguel from "@/assets/bento-cake-mesversario-miguel.jpg.asset.json";
+import mes5Ovelha from "@/assets/mesversario-ovelha-isaac.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -208,10 +211,11 @@ const MONTHS_RAW = [
   },
   {
     n: 5,
-    tema: "O Poderoso Miguel",
-    img: mes5PoderosoMiguel.url,
-    alt: "Bolo do quinto mês decorado com tema O Poderoso Miguel",
-    emoji: "👔",
+    tema: "Jurassic Park",
+    img: mes5Jurassic.url,
+    imgs: [mes5Jurassic.url, mes5Miguel.url, mes5Ovelha.url],
+    alt: "Bolo do quinto mês decorado com tema Dinossauro Jurassic Park",
+    emoji: "🦖",
   },
   {
     n: 6,
