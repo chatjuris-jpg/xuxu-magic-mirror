@@ -960,6 +960,15 @@ function Index() {
     setLightbox({ images: atual.imgs, alt: atual.alt, imageIndex });
   };
 
+  const openInspirationLightbox = (imageIndex: number) => {
+    setLightbox({
+      images: INSPIRATIONS.map((i) => i.img),
+      alt: "Inspire-se",
+      imageIndex,
+    });
+  };
+
+
   const closeLightbox = () => setLightbox(null);
 
   const lightboxImages = lightbox?.images ?? [];
