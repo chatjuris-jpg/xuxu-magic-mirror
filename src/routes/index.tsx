@@ -63,6 +63,8 @@ import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.jso
 import bentoVaquinhaLiz from "@/assets/bento-cake-vaquinha-liz.jpg.asset.json";
 import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
+import bentoMes2Frutinha from "@/assets/bento-cake-mesversario-frutinha.jpg.asset.json";
+import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
 
 import {
   MessageCircle,
