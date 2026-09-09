@@ -53,6 +53,7 @@ import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
 import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
+import xuxuzinhoLogoBranca from "@/assets/xuxuzinho-logo-branca.png.asset.json";
 import refCarrinhosTheo from "@/assets/referencia-carrinhos-theo.png.asset.json";
 import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
 import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
@@ -1497,9 +1498,11 @@ function Index() {
 
       <footer className="border-t-2 border-navy bg-plum py-12 text-cream">
         <div className="section-shell flex flex-col items-center gap-6 text-center">
-          <p className="font-display text-3xl font-bold text-cream">
-            Xuxuzinho
-          </p>
+          <img
+            src={xuxuzinhoLogoBranca.url}
+            alt="Xuxuzinho Confeitaria Artesanal"
+            className="h-16 w-auto object-contain drop-shadow-sm"
+          />
 
           <p className="text-sm text-cream/90">
             Confeitaria artesanal · Pedidos pelo WhatsApp{" "}
