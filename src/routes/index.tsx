@@ -43,6 +43,10 @@ import batizado4 from "@/assets/bolo_decorado_para_batizado_primeira_comunhao.jp
 import batizado5 from "@/assets/batizado_bolo.jpg.asset.json";
 import infantilMariaLaura from "@/assets/infantil-maria-laura-6meses.jpg.asset.json";
 import infantilIngridStitch from "@/assets/infantil-ingrid-stitch.jpg.asset.json";
+import boloSolInfantil from "@/assets/bolo-sol-infantil.png.asset.json";
+import boloJoaninhasInfantil from "@/assets/bolo-joaninhas-infantil.png.asset.json";
+import boloAndar1AnoSol from "@/assets/bolo-andar-1-ano-sol.png.asset.json";
+
 import chaFraldasBoloPersonalizado from "@/assets/cha-fraldas-bolo-personalizado.jpg.asset.json";
 import chaBebeBoloUrsinho from "@/assets/cha-bebe-bolo-ursinho.jpg.asset.json";
 import chaBebeBoloDecorado from "@/assets/cha-bebe-bolo-decorado.png.asset.json";
