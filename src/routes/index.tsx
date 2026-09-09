@@ -235,10 +235,11 @@ const MONTHS_RAW = [
   },
   {
     n: 8,
-    tema: "Sol e diversão",
-    img: mes8SolBellaNovo.url,
-    alt: "Bolo do oitavo mês decorado com sol sorridente e nome Bella",
-    emoji: "☀️",
+    tema: "Papagaio",
+    img: mes8Papagaio.url,
+    imgs: [mes8Papagaio.url, mes8EightAzul.url, mes8AliceArcoIris.url],
+    alt: "Bolo do oitavo mês decorado com papagaio e cupcakes combinando",
+    emoji: "🦜",
   },
   {
     n: 9,
