@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import heroMesversario from "@/assets/hero-mesversario.png.asset.json";
+import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 import mes1HomemAranhaDante from "@/assets/mes-1-homem-aranha-dante.png.asset.json";
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
 import mes3RafaelaCinderela from "@/assets/mes-3-rafaela-cinderela.png.asset.json";
@@ -794,13 +794,13 @@ function Index() {
                 style={{ ["--tilt" as string]: "2deg" }}
               >
                 <img
-                  src={heroMesversario.url}
-                  alt="Bolo de mesversário artesanal decorado com tema Minion e nome Oliver"
+                  src={heroAyla4Meses.url}
+                  alt="Bolo de mesversário artesanal decorado com flores e nome Ayla 4 meses"
                   className="h-[380px] w-full rounded-[1.4rem] object-cover md:h-[460px]"
                 />
               </div>
               <div className="animate-wiggle absolute -top-8 -right-4 flex size-24 flex-col items-center justify-center rounded-full border-2 border-navy bg-caramel text-navy shadow-[6px_6px_0_0_var(--navy)]">
-                <span className="font-script text-3xl leading-none">10 Meses</span>
+                <span className="font-display text-2xl leading-none">4 Meses</span>
                 <span className="text-[10px] font-bold tracking-wider uppercase">
                   JÁ?!
                 </span>
