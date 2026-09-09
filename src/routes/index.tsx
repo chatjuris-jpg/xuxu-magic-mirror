@@ -445,7 +445,7 @@ const PRODUCTS: Product[] = [
     price: "A confirmar valor",
   },
   {
-    title: "Infantil",
+    title: "Infantil (Bolos Maiores)",
     desc: "Personagens, desenhos feitos à mão e temas especiais para aniversários infantis que merecem um bolo inesquecível.",
     bg: "#EFC3D4",
     imgs: [infantilMariaLaura.url, infantilIngridStitch.url],
