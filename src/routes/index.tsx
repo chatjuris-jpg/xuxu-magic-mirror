@@ -12,7 +12,9 @@ import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.j
 import mes9CapitaoAmerica from "@/assets/bolo-bento-cake-capitao-america.jpg.asset.json";
 import mes9Rapunzel from "@/assets/bento-cake-rapunzel-9meses.jpg.asset.json";
 import mes9FlorDelicado from "@/assets/bento-cake-flor-delicado-9meses.jpg.asset.json";
-import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
+import mes10MinionOliver from "@/assets/mes10-minion-oliver.jpeg.asset.json";
+import mes10MikeWazowski from "@/assets/mes10-mike-wazowski.jpg.asset.json";
+import mes10AuroraCecilia from "@/assets/mes10-aurora-cecilia.jpg.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
 import batizado1 from "@/assets/bolo_personalizado_batizado.jpg.asset.json";
@@ -258,6 +260,7 @@ const MONTHS_RAW = [
     n: 10,
     tema: "Minions",
     img: mes10MinionOliver.url,
+    imgs: [mes10MinionOliver.url, mes10MikeWazowski.url, mes10AuroraCecilia.url],
     alt: "Bolo do décimo mês decorado com tema Minion e nome Oliver",
     emoji: "🍌",
   },
