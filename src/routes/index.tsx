@@ -1198,13 +1198,13 @@ function Index() {
                     {p.price && (
                       <div className="mt-5 inline-flex items-center gap-3 rounded-2xl border-2 border-dashed border-navy bg-cream px-5 py-3 shadow-[4px_4px_0px_0px_var(--color-navy)]">
                         <Star className="size-4 fill-caramel text-caramel" />
-                        <div className="flex flex-col items-center leading-none">
+                        <div className="flex items-baseline gap-2 leading-none">
                           {p.price.toLowerCase().startsWith("a partir de ") ? (
                             <>
                               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-navy/70">
                                 A partir de
                               </span>
-                              <span className="mt-1 font-display text-2xl font-semibold text-navy">
+                              <span className="font-display text-2xl font-semibold text-navy">
                                 {p.price.replace(/^a partir de /i, "")}
                               </span>
                             </>
