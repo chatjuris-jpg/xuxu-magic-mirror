@@ -738,7 +738,51 @@ function Cta({
 function Index() {
   const [mes, setMes] = useState(1);
   const [open, setOpen] = useState<number | null>(0);
+  const [lightbox, setLightbox] = useState<{
+    productIndex: number;
+    imageIndex: number;
+  } | null>(null);
   const atual = MONTHS.find((m) => m.n === mes)!;
+
+  const openLightbox = (productIndex: number, imageIndex: number) => {
+    setLightbox({ productIndex, imageIndex });
+  };
+
+  const closeLightbox = () => setLightbox(null);
+
+  const lightboxProduct = lightbox ? PRODUCTS[lightbox.productIndex] : null;
+  const lightboxImages = lightboxProduct?.imgs ||
+    (lightboxProduct?.img ? [lightboxProduct.img] : []);
+
+  const goPrev = () => {
+    if (!lightbox) return;
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === 0
+                ? lightboxImages.length - 1
+                : prev.imageIndex - 1,
+          }
+        : null,
+    );
+  };
+
+  const goNext = () => {
+    if (!lightbox) return;
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === lightboxImages.length - 1
+                ? 0
+                : prev.imageIndex + 1,
+          }
+        : null,
+    );
+  };
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-cream text-navy">
