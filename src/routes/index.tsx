@@ -491,7 +491,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Papel Arroz",
-    desc: "Desenhos e estampas personalizadas em papel arroz comestível para decorar bolos e doces com muito charme.",
+    desc: "Bolos com fotos, com alta definição, riqueza de detalhes e acabamento impecável.",
     bg: "#C9E4D4",
     imgs: [
       papelArrozAniversario.url,
