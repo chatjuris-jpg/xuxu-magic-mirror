@@ -52,6 +52,11 @@ import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
 import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
+import refCarrinhosTheo from "@/assets/referencia-carrinhos-theo.png.asset.json";
+import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
+import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
+import refDinoMatteo from "@/assets/referencia-dino-matteo.png.asset.json";
+import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.json";
 
 import {
   MessageCircle,
@@ -710,6 +715,39 @@ const RIBBON = [
   "parabéns pra você",
 ];
 
+const INSPIRATIONS = [
+  {
+    img: refCarrinhosTheo.url,
+    alt: "Bolo de mesversário tema carrinhos para o Theo, 9 meses",
+    title: "Carrinhos",
+    detail: "Theo · 9 meses",
+  },
+  {
+    img: refAbelhinha.url,
+    alt: "Bolo de mesversário tema abelhinha para 11 meses",
+    title: "Abelhinha",
+    detail: "11 meses",
+  },
+  {
+    img: refDinoLucca.url,
+    alt: "Bolo de mesversário tema dinossauro para o Lucca, 2 meses",
+    title: "Dinossauro",
+    detail: "Lucca · 2 meses",
+  },
+  {
+    img: refDinoMatteo.url,
+    alt: "Bolo de mesversário tema dinossauro para o Matteo, 2 meses",
+    title: "Dino divertido",
+    detail: "Matteo · 2 meses",
+  },
+  {
+    img: refDragaoLeonardo.url,
+    alt: "Bolo de mesversário tema Como Treinar o Seu Dragão para o Leonardo, 6 meses",
+    title: "Dragão",
+    detail: "Leonardo · 6 meses",
+  },
+];
+
 function Cta({
   href,
   children,
@@ -993,6 +1031,59 @@ function Index() {
                   <Star className="size-4 fill-caramel text-caramel" />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* INSPIRAÇÕES — COMO PODEMOS FAZER O SEU BOLINHO */}
+        <section id="inspiracoes" className="bg-cream py-20">
+          <div className="section-shell">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="eyebrow">Inspire-se</p>
+              <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+                Veja como podemos fazer o seu bolinho
+              </h2>
+              <p className="mt-4 text-navy/70">
+                Temas personalizados, cores que combinam com a festinha e aquele
+                detalhe feito à mão que só a Xuxuzinho tem.
+              </p>
+            </div>
+
+            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {INSPIRATIONS.map((item, i) => (
+                <div
+                  key={item.title}
+                  className={`group relative overflow-hidden rounded-[2rem] border-2 border-navy bg-white p-3 shadow-[6px_6px_0_0_var(--navy)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_0_0_var(--navy)] ${
+                    i === 0 || i === 3 ? "lg:col-span-2" : ""
+                  } ${i === 2 ? "sm:row-span-2" : ""}`}
+                >
+                  <div className="relative aspect-square overflow-hidden rounded-[1.5rem] border border-navy/10">
+                    <img
+                      src={item.img}
+                      alt={item.alt}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="mt-3 flex items-center justify-between px-1">
+                    <div>
+                      <p className="font-display text-lg font-semibold text-navy">
+                        {item.title}
+                      </p>
+                      <p className="text-xs text-navy/60">{item.detail}</p>
+                    </div>
+                    <span className="flex size-9 items-center justify-center rounded-full bg-caramel text-navy">
+                      <Heart className="size-4 fill-navy" />
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Cta href={WA_ORCAMENTO} variant="plum">
+                <MessageCircle className="size-4" /> Quero uma ideia exclusiva
+              </Cta>
             </div>
           </div>
         </section>
