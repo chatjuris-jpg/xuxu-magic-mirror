@@ -395,11 +395,13 @@ const PRODUCTS: Product[] = [
       cupcakeMesversarioLeao.url,
     ],
     alt: "Cupcake de mesversário personalizado com tema e número do mês",
+    price: "a partir de R$18,50",
   },
   {
     title: "Kit Mesversário",
     desc: "Uma composição pensada para deixar a mesa pronta: bolo e docinhos combinando com o tema escolhido.",
     bg: "#C9E4D4",
+    price: "a partir de R$102,00",
   },
   {
     title: "Kit com Cupcake",
@@ -411,6 +413,7 @@ const PRODUCTS: Product[] = [
       kitPapagaioMesversario.url,
     ],
     alt: "Kit com cupcake e bolo personalizado para mesversário",
+    price: "a partir de R$140,00",
   },
   {
     title: "Revelação",
@@ -424,6 +427,7 @@ const PRODUCTS: Product[] = [
       revelacaoBoloBebe.url,
     ],
     alt: "Bolo de chá revelação decorado com tema rosa e azul",
+    price: "a partir de R$85,00",
   },
   {
     title: "Chá de Fraldas / Chá de Bebê",
@@ -443,6 +447,7 @@ const PRODUCTS: Product[] = [
     bg: "#EFC3D4",
     imgs: [infantilMariaLaura.url, infantilIngridStitch.url],
     alt: "Bolo infantil personalizado com personagens e temas especiais",
+    price: "a partir de R$200,00",
   },
   {
     title: "Batizado e 1ª Comunhão",
@@ -469,6 +474,7 @@ const PRODUCTS: Product[] = [
       vintageCakeBento.url,
     ],
     alt: "Bolo vintage personalizado com acabamento clássico e elegante",
+    price: "R$100,00",
   },
   {
     title: "Smash Cake",
@@ -481,6 +487,7 @@ const PRODUCTS: Product[] = [
       smashCakeAzulAmarelo.url,
     ],
     alt: "Bolo Smash Cake decorado para festa de primeiro aninho",
+    price: "a partir de R$220,00",
   },
   {
     title: "Papel Arroz",
@@ -494,6 +501,7 @@ const PRODUCTS: Product[] = [
       papelArrozLuna.url,
     ],
     alt: "Bolo decorado com papel arroz personalizado com foto e personagens",
+    price: "a partir de R$85,00",
   },
 ];
 
