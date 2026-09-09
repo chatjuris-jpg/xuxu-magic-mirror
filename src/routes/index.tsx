@@ -54,6 +54,7 @@ import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
 import xuxuzinhoLogoBranca from "@/assets/xuxuzinho-logo-branca.png.asset.json";
+import xuxuzinhoLogoOficial from "@/assets/xuxuzinho-logo-oficial.png.asset.json";
 import refCarrinhosTheo from "@/assets/referencia-carrinhos-theo.png.asset.json";
 import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
 import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
@@ -860,8 +861,12 @@ function Index() {
 
       <header className="sticky top-0 z-50 border-b-2 border-navy bg-cream/95 backdrop-blur">
         <div className="section-shell flex h-20 items-center justify-between gap-6">
-          <a href="#top" className="font-script text-3xl leading-none text-plum">
-            Xuxuzinho
+          <a href="#top" className="flex items-center">
+            <img
+              src={xuxuzinhoLogoOficial.url}
+              alt="Xuxuzinho Confeitaria Artesanal"
+              className="h-10 w-auto object-contain"
+            />
           </a>
           <nav className="hidden items-center gap-2 lg:flex">
             {NAV.map((item) => (
