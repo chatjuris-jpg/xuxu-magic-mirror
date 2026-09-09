@@ -60,6 +60,9 @@ import refAbelhinha from "@/assets/referencia-abelhinha-11meses.png.asset.json";
 import refDinoLucca from "@/assets/referencia-dino-lucca.jpg.asset.json";
 import refDinoMatteo from "@/assets/referencia-dino-matteo.png.asset.json";
 import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.json";
+import bentoVaquinhaLiz from "@/assets/bento-cake-vaquinha-liz.jpg.asset.json";
+import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
+import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -163,13 +166,14 @@ const NAV = [
   { label: "Como funciona", href: "#como-funciona" },
 ];
 
-const MONTHS = [
+const MONTHS_RAW = [
   {
     n: 1,
-    tema: "Homem-Aranha",
-    img: mes1HomemAranhaDante.url,
-    alt: "Bolo do primeiro mês decorado com tema Homem-Aranha e nome Dante",
-    emoji: "🕷️",
+    tema: "Fazendinha",
+    img: bentoVaquinhaLiz.url,
+    imgs: [bentoVaquinhaLiz.url, bentoHaku.url, bentoDinoAsafe.url],
+    alt: "Bento cake do primeiro mês decorado com vaquinha e mamadeira",
+    emoji: "🐮",
   },
   {
     n: 2,
