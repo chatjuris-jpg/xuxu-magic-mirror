@@ -1014,7 +1014,6 @@ function Index() {
                 <button
                   key={m.n}
                   onClick={() => {
-                    console.log("CLICK MES", m.n);
                     setMes(m.n);
                     setMesSlide(0);
                   }}
