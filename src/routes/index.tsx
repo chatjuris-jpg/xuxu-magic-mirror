@@ -945,6 +945,12 @@ function MonthButton({
 }
 
 function Index() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, []);
+
   const [mes, setMes] = useState(1);
   const [mesSlide, setMesSlide] = useState(0);
   const [open, setOpen] = useState<number | null>(0);
@@ -954,6 +960,7 @@ function Index() {
     imageIndex: number;
   } | null>(null);
   const atual = MONTHS.find((m) => m.n === mes)!;
+
 
   const openLightbox = (productIndex: number, imageIndex: number) => {
     const product = PRODUCTS[productIndex];
