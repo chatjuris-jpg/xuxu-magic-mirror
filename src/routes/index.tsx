@@ -442,6 +442,7 @@ const PRODUCTS: Product[] = [
       chaBebeBoloFlores.url,
     ],
     alt: "Bolo de chá de fraldas e chá de bebê decorado e personalizado",
+    price: "A confirmar valor",
   },
   {
     title: "Infantil",
