@@ -930,29 +930,14 @@ function Index() {
                 </Cta>
               </div>
 
-              <div className="relative flex items-center justify-center overflow-hidden bg-plum p-8 md:p-12">
-                <div
-                  aria-hidden
-                  className="absolute -right-10 -top-10 size-56 rounded-full bg-cream/20 md:size-72"
-                />
-                <div
-                  aria-hidden
-                  className="absolute -left-12 bottom-10 size-40 rounded-full bg-cream/10"
-                />
-                <Heart
-                  aria-hidden
-                  className="absolute left-8 top-8 size-6 text-cream/80"
-                />
-                <Sparkles
-                  aria-hidden
-                  className="absolute right-10 top-12 size-5 text-caramel"
-                />
+              <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden bg-plum md:min-h-full">
                 <img
                   src={garrafinhasXuxuzinho.url}
                   alt="Garrafinhas térmicas personalizadas com a marca Xuxuzinho em tons de azul e creme"
-                  className="relative z-10 h-auto w-full max-w-sm object-contain drop-shadow-[8px_8px_0_rgba(0,0,0,0.25)]"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
-                <p className="absolute bottom-6 left-1/2 w-max -translate-x-1/2 rounded-full border-2 border-navy bg-caramel px-4 py-1.5 text-xs font-bold text-navy">
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
+                <p className="absolute bottom-6 left-1/2 z-10 w-max -translate-x-1/2 rounded-full border-2 border-navy bg-caramel px-4 py-1.5 text-xs font-bold text-navy shadow-[4px_4px_0_0_var(--navy)]">
                   meu mesversário
                 </p>
               </div>
