@@ -63,6 +63,8 @@ import refDragaoLeonardo from "@/assets/referencia-dragao-leonardo.png.asset.jso
 import bentoVaquinhaLiz from "@/assets/bento-cake-vaquinha-liz.jpg.asset.json";
 import bentoHaku from "@/assets/bento-cake-haku.jpg.asset.json";
 import bentoDinoAsafe from "@/assets/bento-cake-dino-asafe.jpg.asset.json";
+import bentoMes2Frutinha from "@/assets/bento-cake-mesversario-frutinha.jpg.asset.json";
+import bentoMes2Cinderela from "@/assets/bento-cake-cinderela.jpg.asset.json";
 
 import {
   MessageCircle,
@@ -177,10 +179,11 @@ const MONTHS_RAW = [
   },
   {
     n: 2,
-    tema: "Poderoso Nenezinho",
-    img: mes2PoderosoNenezinho.url,
-    alt: "Bolo do segundo mês decorado com o tema Poderoso Nenezinho",
-    emoji: "🧸",
+    tema: "Frutinha",
+    img: bentoMes2Frutinha.url,
+    imgs: [bentoMes2Frutinha.url, bentoMes2Cinderela.url],
+    alt: "Bolo do segundo mês decorado com frutinhas e nome Sara",
+    emoji: "🍊",
   },
   {
     n: 3,
