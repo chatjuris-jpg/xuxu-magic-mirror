@@ -979,7 +979,7 @@ function Index() {
                 >
                   <MessageCircle className="size-4" /> Quero o bolo do {atual.n}º mês
                 </Cta>
-                <p className="mt-3 text-sm font-bold tracking-wide text-red-500 uppercase">
+                <p className="mt-3 font-display text-sm font-semibold tracking-wide text-navy uppercase">
                   A partir de R$85,00
                 </p>
               </div>
