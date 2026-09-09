@@ -1109,7 +1109,7 @@ function Index() {
             <div className="mx-auto max-w-2xl text-center">
               <p className="eyebrow text-caramel">Como funciona</p>
               <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-                Encomendar o mesversário é simples e rápido:
+                Encomendar é simples e rápido:
               </h2>
             </div>
 
