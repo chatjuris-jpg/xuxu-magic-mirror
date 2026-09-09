@@ -278,10 +278,11 @@ const MONTHS_RAW = [
   },
   {
     n: 12,
-    tema: "Astronauta",
-    img: mes12AstronautaGabriel.url,
-    alt: "Bolo do décimo segundo mês decorado com tema Astronauta e nome Gabriel",
-    emoji: "🚀",
+    tema: "1 ano",
+    img: mes12UpApolo.url,
+    imgs: [mes12UpApolo.url, mes12Nala.url, mes12UrsinhoMicael.url],
+    alt: "Bolo de 1 ano decorado com tema Up Altas Aventuras e nome Apolo",
+    emoji: "🎂",
   },
 ];
 
