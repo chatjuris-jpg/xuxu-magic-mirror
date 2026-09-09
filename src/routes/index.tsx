@@ -464,7 +464,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Vintage Cake",
-    desc: "Estilo clássico e elegante, com acabamento liso, flores e cores suaves para qualquer ocasião especial.",
+    desc: "Estilo clássico e elegante, com acabamento perfeito.",
     bg: "#F5DF9E",
     imgs: [
       vintageCakePersonalizado.url,
