@@ -575,7 +575,7 @@ function ProductFigure({
   onImageClick,
 }: {
   p: Product;
-  onImageClick?: (imageIndex: number) => void;
+  onImageClick: ((imageIndex: number) => void) | undefined;
 }) {
   if (p.imgs && p.imgs.length > 0) {
     return (
