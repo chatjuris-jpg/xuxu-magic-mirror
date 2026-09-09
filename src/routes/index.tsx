@@ -960,6 +960,15 @@ function Index() {
     setLightbox({ images: atual.imgs, alt: atual.alt, imageIndex });
   };
 
+  const openInspirationLightbox = (imageIndex: number) => {
+    setLightbox({
+      images: INSPIRATIONS.map((i) => i.img),
+      alt: "Inspire-se",
+      imageIndex,
+    });
+  };
+
+
   const closeLightbox = () => setLightbox(null);
 
   const lightboxImages = lightbox?.images ?? [];
@@ -1263,18 +1272,35 @@ function Index() {
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {INSPIRATIONS.map((item) => (
+              {INSPIRATIONS.map((item, idx) => (
                 <div
                   key={item.title}
                   className="group overflow-hidden rounded-2xl border border-navy/10 bg-white p-2 shadow-[3px_3px_0_0_color-mix(in_oklab,var(--navy)_10%,transparent)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[5px_5px_0_0_color-mix(in_oklab,var(--navy)_14%,transparent)]"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                  <div
+                    className="relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl"
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Ampliar foto ${item.title}`}
+                    onClick={() => openInspirationLightbox(idx)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        openInspirationLightbox(idx);
+                      }
+                    }}
+                  >
                     <img
                       src={item.img}
                       alt={item.alt}
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
+                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-navy/0 transition-colors duration-300 group-hover:bg-navy/10">
+                      <div className="flex scale-75 items-center gap-2 rounded-full border-2 border-cream bg-navy/80 px-3 py-1.5 text-xs font-bold text-cream opacity-0 shadow-sm transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+                        <Sparkles className="size-3.5" /> Ampliar
+                      </div>
+                    </div>
                   </div>
                   <div className="mt-2 flex items-center justify-between px-1 py-1">
                     <div>
@@ -1288,6 +1314,7 @@ function Index() {
                 </div>
               ))}
             </div>
+
 
             <div className="mt-10 text-center">
               <Cta href={WA_ORCAMENTO} variant="plum">
