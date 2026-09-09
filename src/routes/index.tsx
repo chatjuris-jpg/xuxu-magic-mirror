@@ -1308,25 +1308,25 @@ function Index() {
               </h2>
             </div>
 
-            <div className="relative mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible">
+            <div className="relative mt-10 grid grid-cols-3 gap-3 md:mt-14 md:gap-6">
               {/* linha conectora entre os cards */}
-              <div className="pointer-events-none absolute top-[3.25rem] left-0 right-0 hidden h-px bg-gradient-to-r from-transparent via-caramel to-transparent md:block" />
+              <div className="pointer-events-none absolute top-[2.25rem] left-0 right-0 hidden h-px bg-gradient-to-r from-transparent via-caramel to-transparent md:top-[3.25rem] md:block" />
 
               {BENEFITS.map((b, i) => (
                 <article
                   key={b.title}
-                  className="relative w-[82vw] shrink-0 snap-center rounded-[1.75rem] border border-navy/10 bg-cream/70 p-6 text-center backdrop-blur-sm transition-all duration-300 first:ml-4 last:mr-4 hover:-translate-y-1 hover:shadow-[0_12px_30px_-12px_color-mix(in_oklab,var(--navy)_12%,transparent)] sm:w-[60vw] md:mx-0 md:w-auto md:snap-none md:p-7 md:first:ml-0 md:last:mr-0"
+                  className="relative rounded-2xl border border-navy/10 bg-cream/70 p-3 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-12px_color-mix(in_oklab,var(--navy)_12%,transparent)] md:rounded-[1.75rem] md:p-7"
                 >
                   <div className="relative mx-auto inline-flex">
-                    <span className="flex size-14 items-center justify-center rounded-2xl bg-caramel text-navy shadow-md md:size-16">
-                      <b.icon className="size-6 md:size-7" strokeWidth={1.8} />
+                    <span className="flex size-10 items-center justify-center rounded-xl bg-caramel text-navy shadow-md md:size-16 md:rounded-2xl">
+                      <b.icon className="size-4 md:size-7" strokeWidth={1.8} />
                     </span>
-                    <span className="absolute -top-2 -right-2 flex size-6 items-center justify-center rounded-full bg-navy text-[10px] font-bold text-cream shadow-sm md:size-7 md:text-xs">
+                    <span className="absolute -top-1.5 -right-1.5 flex size-5 items-center justify-center rounded-full bg-navy text-[9px] font-bold text-cream shadow-sm md:-top-2 md:-right-2 md:size-7 md:text-xs">
                       {i + 1}
                     </span>
                   </div>
-                  <h3 className="mt-5 text-base font-bold text-navy md:mt-6 md:text-lg">{b.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy/60">{b.text}</p>
+                  <h3 className="mt-3 text-[11px] font-bold leading-tight text-navy md:mt-6 md:text-lg">{b.title}</h3>
+                  <p className="mt-1 text-[10px] leading-snug text-navy/60 md:mt-2 md:text-sm md:leading-relaxed">{b.text}</p>
                 </article>
               ))}
             </div>
