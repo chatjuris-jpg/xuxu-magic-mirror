@@ -335,22 +335,22 @@ const BENEFITS = [
 const POLAROIDS = [
   {
     img: muralSininhoMariaClara.url,
-    cap: "Maria Clara",
+    cap: "Sininho",
     alt: "Bolo decorado com tema Sininho, flores e cogumelos para 1 mês da Maria Clara",
   },
   {
     img: muralVaquinhaAlana.url,
-    cap: "Alana",
+    cap: "Vaquinha tetê",
     alt: "Bento cake com vaquinha e frase 1 mês só pensando em tetê para a Alana",
   },
   {
     img: muralUrsinhoMatteo.url,
-    cap: "Matteo",
+    cap: "Ursinho",
     alt: "Bento cake com ursinho marrom e corações dourados de 1 mês do Matteo",
   },
   {
     img: muralPoohJoaoPedro.url,
-    cap: "João Pedro",
+    cap: "Ursinho Pooh",
     alt: "Bento cake do Ursinho Pooh com abelhinhas de 4 meses do João Pedro",
   },
   {
@@ -360,40 +360,41 @@ const POLAROIDS = [
   },
   {
     img: muralLimaoSofia.url,
-    cap: "Sofia",
+    cap: "Frutinhas",
     alt: "Bento cake decorado com limões de 5 meses da Sofia",
   },
   {
     img: muralFloresCecilia.url,
-    cap: "Cecília",
+    cap: "Flores",
     alt: "Bento cake delicado com folhas de 1 mês da Cecília",
   },
   {
     img: muralChavesIcaro.url,
-    cap: "Ícaro",
+    cap: "Chaves e Quico",
     alt: "Bento cake com tema Chaves de 11 meses do Ícaro",
   },
   {
     img: muralCarrosThales.url,
-    cap: "Thales",
+    cap: "Cars",
     alt: "Bolo vermelho do Carros de 8 meses do Thales",
   },
   {
     img: muralPrincesaAurora.url,
-    cap: "Aurora",
+    cap: "Princesa Aurora",
     alt: "Bento cake da princesa Aurora de 1 ano",
   },
   {
     img: muralStella.url,
-    cap: "Stella",
+    cap: "Meses",
     alt: "Bento cake rosa com número 1 de chantilly e flores para 1 mês da Stella",
   },
   {
     img: muralSophiaBailarina.url,
-    cap: "Sophia",
+    cap: "Bailarina",
     alt: "Bolo decorado com bailarina e flores para 4 anos da Sophia",
   },
 ];
+
 
 /* Ilustrações em CSS para os cartões de produto */
 const artCupcake = (
