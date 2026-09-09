@@ -979,9 +979,18 @@ function Index() {
                 >
                   <MessageCircle className="size-4" /> Quero o bolo do {atual.n}º mês
                 </Cta>
-                <p className="mt-3 font-display text-sm font-semibold tracking-wide text-navy uppercase">
-                  A partir de R$85,00
-                </p>
+                <div className="mt-5 inline-flex -rotate-1 items-center gap-2 rounded-2xl border-2 border-dashed border-navy bg-cream px-5 py-3 shadow-[4px_4px_0_0_var(--navy)]">
+                  <Star className="size-4 fill-caramel text-caramel" />
+                  <div className="flex flex-col items-center leading-none">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-navy/60">
+                      A partir de
+                    </span>
+                    <span className="font-display text-2xl font-semibold text-navy">
+                      R$85,00
+                    </span>
+                  </div>
+                  <Star className="size-4 fill-caramel text-caramel" />
+                </div>
               </div>
             </div>
           </div>
