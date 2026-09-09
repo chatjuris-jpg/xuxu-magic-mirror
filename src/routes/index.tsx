@@ -52,7 +52,7 @@ import vintageCake3Meses from "@/assets/vintage-cake-3-meses.jpg.asset.json";
 import vintageCakeAndar from "@/assets/vintage-cake-andar.jpg.asset.json";
 import vintageCakeBento from "@/assets/vintage-cake-bento.jpg.asset.json";
 import garrafinhasXuxuzinho from "@/assets/garrafinhas-xuxuzinho.png.asset.json";
-import logoXuxuzinho from "@/assets/xuxuzinho-logo-oficial.png.asset.json";
+
 import {
   MessageCircle,
   Sparkles,
