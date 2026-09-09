@@ -490,7 +490,7 @@ const PRODUCTS: Product[] = [
       vintageCakeBento.url,
     ],
     alt: "Bolo vintage personalizado com acabamento clássico e elegante",
-    price: "R$100,00",
+    price: "a partir de R$100,00",
   },
   {
     title: "Smash Cake",
