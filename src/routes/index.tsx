@@ -9,6 +9,9 @@ import mes8Papagaio from "@/assets/mes8-papagaio.png.asset.json";
 import mes8EightAzul from "@/assets/mes8-eight-azul.jpg.asset.json";
 import mes8AliceArcoIris from "@/assets/mes8-alice-arcoiris.jpg.asset.json";
 import mes9SuperpoderosaNovo from "@/assets/mes-9-superpoderosa-novo.png.asset.json";
+import mes9CapitaoAmerica from "@/assets/bolo-bento-cake-capitao-america.jpg.asset.json";
+import mes9Rapunzel from "@/assets/bento-cake-rapunzel-9meses.jpg.asset.json";
+import mes9FlorDelicado from "@/assets/bento-cake-flor-delicado-9meses.jpg.asset.json";
 import mes10MinionOliver from "@/assets/mes-10-minion-oliver.png.asset.json";
 import mes11BarcoHeitorNovo from "@/assets/mes-11-barco-heitor-novo.png.asset.json";
 import mes12AstronautaGabriel from "@/assets/mes-12-astronauta-gabriel.png.asset.json";
@@ -245,10 +248,11 @@ const MONTHS_RAW = [
   },
   {
     n: 9,
-    tema: "Menina Superpoderosa",
-    img: mes9SuperpoderosaNovo.url,
-    alt: "Bolo do nono mês decorado com tema Menina Superpoderosa",
-    emoji: "💚",
+    tema: "Capitão América",
+    img: mes9CapitaoAmerica.url,
+    imgs: [mes9CapitaoAmerica.url, mes9Rapunzel.url, mes9FlorDelicado.url],
+    alt: "Bolo do nono mês decorado com tema Capitão América e nome Matteo",
+    emoji: "🛡️",
   },
   {
     n: 10,
@@ -810,6 +814,31 @@ function Cta({
   );
 }
 
+function MonthButton({
+  m,
+  active,
+  onSelect,
+}: {
+  m: (typeof MONTHS)[number];
+  active: boolean;
+  onSelect: (n: number) => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={() => onSelect(m.n)}
+      aria-pressed={active}
+      className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
+        active
+          ? "bg-caramel text-navy shadow-[4px_4px_0_0_var(--navy)]"
+          : "bg-cream/90 text-navy/70"
+      }`}
+    >
+      {m.n}º
+    </button>
+  );
+}
+
 function Index() {
   const [mes, setMes] = useState(1);
   const [mesSlide, setMesSlide] = useState(0);
@@ -1027,21 +1056,15 @@ function Index() {
 
             <div className="mx-auto mt-10 grid max-w-3xl grid-cols-4 gap-3 sm:grid-cols-6">
               {MONTHS.map((m) => (
-                <button
+                <MonthButton
                   key={m.n}
-                  onClick={() => {
-                    setMes(m.n);
+                  m={m}
+                  active={mes === m.n}
+                  onSelect={(n) => {
+                    setMes(n);
                     setMesSlide(0);
                   }}
-                  aria-pressed={mes === m.n}
-                  className={`rounded-2xl border-2 border-navy py-3 text-lg font-bold transition-all duration-200 hover:-translate-y-1 ${
-                    mes === m.n
-                      ? "bg-caramel text-navy shadow-[4px_4px_0_0_var(--navy)]"
-                      : "bg-cream/90 text-navy/70"
-                  }`}
-                >
-                  {m.n}º
-                </button>
+                />
               ))}
             </div>
 
