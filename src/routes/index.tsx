@@ -254,6 +254,11 @@ const MONTHS_RAW = [
   },
 ];
 
+const MONTHS = MONTHS_RAW.map((m) => ({
+  ...m,
+  imgs: m.imgs ?? [m.img],
+}));
+
 const BENEFITS = [
   {
     icon: Sparkles,
