@@ -3,7 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import heroAyla4Meses from "@/assets/hero-ayla-4meses.png.asset.json";
 
 import mes2PoderosoNenezinho from "@/assets/mes-2-poderoso-nenezinho.png.asset.json";
-import mes4PoolFilipe from "@/assets/mes-4-pool-filipe.png.asset.json";
+
 import mes5PoderosoMiguel from "@/assets/mes-5-poderoso-miguel.png.asset.json";
 import mes6FrutasMiguelNovo from "@/assets/mes-6-frutas-miguel-novo.png.asset.json";
 import mes7NatalRafaela from "@/assets/mes-7-natal-rafaela.png.asset.json";
