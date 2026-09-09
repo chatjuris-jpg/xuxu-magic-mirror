@@ -1382,14 +1382,6 @@ function Index() {
               <MapPin className="size-4" />
               R. Manuel de Atouguia, 14 – Tatuapé, São Paulo/SP · CEP 03313-020
             </span>
-            <a
-              href="https://www.google.com/maps?q=R.+Manuel+de+Atouguia,+14,+Tatuap%C3%A9,+S%C3%A3o+Paulo+-+SP,+03313-020"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 underline underline-offset-4 transition-opacity hover:opacity-80"
-            >
-              <ExternalLink className="size-3.5" /> Ver no Google Maps
-            </a>
           </div>
 
           <div className="w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-cream/20">
