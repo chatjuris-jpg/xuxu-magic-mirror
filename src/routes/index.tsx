@@ -961,7 +961,7 @@ function Index() {
                 </span>
               </div>
               <div className="absolute -bottom-8 -left-4 w-56 -rotate-3 rounded-2xl border-2 border-navy bg-plum px-5 py-4 text-cream shadow-[6px_6px_0_0_var(--navy)]">
-                <p className="font-script text-2xl leading-none">Álbum cheio!</p>
+                <p className="font-display text-2xl leading-none">Álbum cheio!</p>
                 <p className="mt-2 text-xs leading-relaxed text-cream/85">
                   O detalhe que faltava no álbum do seu bebê.
                 </p>
