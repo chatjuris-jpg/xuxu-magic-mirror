@@ -865,7 +865,7 @@ function Index() {
             <img
               src={xuxuzinhoLogoOficial.url}
               alt="Xuxuzinho Confeitaria Artesanal"
-              className="h-10 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </a>
           <nav className="hidden items-center gap-2 lg:flex">
