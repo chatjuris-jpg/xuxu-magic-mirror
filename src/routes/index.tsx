@@ -1774,8 +1774,9 @@ function Index() {
             rel="noreferrer"
             className="flex items-center gap-2 text-sm font-semibold text-cream/90 transition-opacity hover:opacity-80"
           >
-            <Instagram className="size-4" /> @xuxuzinho
+            <Instagram className="size-4" /> @xuxuzinho_tentaciones
           </a>
+
 
           <p className="text-xs text-cream/60">
             © {new Date().getFullYear()} Xuxuzinho. Todos os direitos reservados.
