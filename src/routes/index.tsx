@@ -401,7 +401,8 @@ const PRODUCTS: Product[] = [
     bg: "#F6CBD8",
     imgs: [
       cupcakeMesversario1Mes.url,
-      cupcakeMesversario2Meses.url,
+      cupcakeMesversarioBorboleta.url,
+      cupcakeMesversarioFlor.url,
       cupcakeMesversarioKit.url,
       cupcakeMesversarioOnca.url,
       cupcakeMesversarioLeao.url,
