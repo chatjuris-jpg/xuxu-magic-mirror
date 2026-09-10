@@ -209,6 +209,7 @@ const NAV = [
   { label: "Galeria", href: "#temas" },
   { label: "Recadinhos", href: "#depoimentos" },
   { label: "Como funciona", href: "#como-funciona" },
+  { label: "Corporativo", href: "https://corporativo.xuxuzinho.com.br", external: true },
 ];
 
 const MONTHS_RAW = [
