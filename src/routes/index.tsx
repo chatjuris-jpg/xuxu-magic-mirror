@@ -1066,7 +1066,13 @@ function Index() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3 py-2 text-sm font-semibold text-navy/75 transition-colors hover:bg-caramel/40 hover:text-navy"
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className={`rounded-full px-3 py-2 text-sm font-semibold transition-colors ${
+                  item.external
+                    ? "border-2 border-navy bg-caramel text-navy shadow-[3px_3px_0_0_var(--navy)] hover:-translate-y-0.5 hover:bg-caramel/80"
+                    : "text-navy/75 hover:bg-caramel/40 hover:text-navy"
+                }`}
               >
                 {item.label}
               </a>
