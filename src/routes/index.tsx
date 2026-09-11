@@ -127,6 +127,7 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  Menu,
 } from "lucide-react";
 
 const WA_TEMA =
@@ -961,6 +962,7 @@ function Index() {
   const [mes, setMes] = useState(1);
   const [mesSlide, setMesSlide] = useState(0);
   const [open, setOpen] = useState<number | null>(0);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [lightbox, setLightbox] = useState<{
     images: string[];
     alt: string;
