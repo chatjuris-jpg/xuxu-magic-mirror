@@ -2,10 +2,10 @@
   "version": 1,
   "asset_id": "24a906a0-55bd-4ebe-99e9-a730b0d5baf9",
   "project_id": "520f8e6d-931e-4bcf-b015-9e367ea82a51",
-  "url": "/__l5e/assets-v1/24a906a0-55bd-4ebe-99e9-a730b0d5baf9/mural-limao-sofia.jpg",
+  "url": "/img/mural-limao-sofia.webp",
   "r2_key": "a/v1/520f8e6d-931e-4bcf-b015-9e367ea82a51/24a906a0-55bd-4ebe-99e9-a730b0d5baf9/mural-limao-sofia.jpg",
   "original_filename": "mural-limao-sofia.jpg",
-  "size": 96378,
-  "content_type": "image/jpeg",
+  "size": 46358,
+  "content_type": "image/webp",
   "created_at": "2026-09-09T17:11:16Z"
 }
