@@ -1115,7 +1115,7 @@ function Index() {
                   className={`rounded-full px-4 py-3 text-sm font-semibold transition-colors ${
                     item.external
                       ? "border-2 border-navy bg-caramel text-navy shadow-[3px_3px_0_0_var(--navy)] hover:bg-caramel/80"
-                      : "text-navy/80 hover:bg-caramel/40 hover:text-navy"
+                      : "bg-caramel/60 text-navy hover:bg-caramel"
                   }`}
                 >
                   {item.label}
