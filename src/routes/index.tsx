@@ -1095,7 +1095,7 @@ function Index() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}
-              className="grid size-11 place-items-center rounded-full border-2 border-navy bg-cream text-navy shadow-[3px_3px_0_0_var(--navy)] transition-transform hover:-translate-y-0.5 lg:hidden"
+              className="grid size-11 place-items-center rounded-full border-2 border-navy bg-caramel text-navy shadow-[3px_3px_0_0_var(--navy)] transition-transform hover:-translate-y-0.5 lg:hidden"
             >
               {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
             </button>
