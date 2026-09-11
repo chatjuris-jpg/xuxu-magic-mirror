@@ -1086,10 +1086,47 @@ function Index() {
               </a>
             ))}
           </nav>
-          <Cta href={WA_ORCAMENTO} className="px-5 py-2.5">
-            <MessageCircle className="size-4" /> Orçamento
-          </Cta>
+          <div className="flex items-center gap-3">
+            <Cta href={WA_ORCAMENTO} className="hidden px-5 py-2.5 sm:inline-flex">
+              <MessageCircle className="size-4" /> Orçamento
+            </Cta>
+            <button
+              type="button"
+              aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((v) => !v)}
+              className="grid size-11 place-items-center rounded-full border-2 border-navy bg-cream text-navy shadow-[3px_3px_0_0_var(--navy)] transition-transform hover:-translate-y-0.5 lg:hidden"
+            >
+              {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </div>
+
+        {menuOpen && (
+          <nav className="border-t-2 border-navy bg-cream px-6 py-4 lg:hidden">
+            <div className="flex flex-col gap-2">
+              {NAV.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
+                  onClick={() => setMenuOpen(false)}
+                  className={`rounded-full px-4 py-3 text-sm font-semibold transition-colors ${
+                    item.external
+                      ? "border-2 border-navy bg-caramel text-navy shadow-[3px_3px_0_0_var(--navy)] hover:bg-caramel/80"
+                      : "text-navy/80 hover:bg-caramel/40 hover:text-navy"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <Cta href={WA_ORCAMENTO} className="mt-2 justify-center px-5 py-3">
+                <MessageCircle className="size-4" /> Orçamento
+              </Cta>
+            </div>
+          </nav>
+        )}
       </header>
 
       <main id="top">
