@@ -165,6 +165,12 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "/" },
+      {
+        rel: "preload",
+        as: "image",
+        href: heroAyla4Meses.url,
+        fetchpriority: "high",
+      },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -1128,6 +1134,8 @@ function Index() {
                       src={src}
                       alt=""
                       aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
                       className="size-11 rounded-full border-2 border-navy object-cover"
                     />
                   ))}
@@ -1155,6 +1163,8 @@ function Index() {
                 <img
                   src={heroAyla4Meses.url}
                   alt="Bolo de mesversário artesanal decorado com flores e nome Ayla 4 meses"
+                  fetchPriority="high"
+                  decoding="async"
                   className="h-[380px] w-full rounded-[1.4rem] object-cover md:h-[460px]"
                 />
               </div>
@@ -1409,6 +1419,8 @@ function Index() {
                 <img
                   src={garrafinhasXuxuzinho.url}
                   alt="Garrafinhas térmicas personalizadas com a marca Xuxuzinho em tons de azul e creme"
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
@@ -1765,6 +1777,8 @@ function Index() {
           <img
             src={xuxuzinhoLogoBranca.url}
             alt="Xuxuzinho Confeitaria Artesanal"
+            loading="lazy"
+            decoding="async"
             className="h-24 w-auto object-contain drop-shadow-sm"
           />
 
