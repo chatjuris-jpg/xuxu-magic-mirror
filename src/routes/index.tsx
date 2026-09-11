@@ -1103,7 +1103,7 @@ function Index() {
         </div>
 
         {menuOpen && (
-          <nav className="border-t-2 border-navy bg-cream px-6 py-4 lg:hidden">
+          <nav className="border-t-2 border-navy bg-caramel/30 px-6 py-4 lg:hidden">
             <div className="flex flex-col gap-2">
               {NAV.map((item) => (
                 <a
