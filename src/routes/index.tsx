@@ -165,6 +165,12 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "/" },
+      {
+        rel: "preload",
+        as: "image",
+        href: heroAyla4Meses.url,
+        fetchpriority: "high",
+      },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
