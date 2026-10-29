@@ -131,15 +131,13 @@ import {
 } from "lucide-react";
 
 const WA_TEMA =
-  "https://wa.me/5511971872937?text=Ol%C3%A1%2C%20Xuxuzinho!%20Quero%20escolher%20o%20tema%20do%20pr%C3%B3ximo%20mesvers%C3%A1rio%20do%20meu%20beb%C3%AA.";
+  "https://tintim.link/whatsapp/9c5cef94-21f1-4360-ab48-c72f13344334/2b58d3a7-e86c-4837-8096-1a3e9edc456b";
 const WA_ORCAMENTO =
-  "https://wa.me/5511971872937?text=Ol%C3%A1%2C%20Xuxuzinho!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20bolo%20de%20mesvers%C3%A1rio.";
+  "https://tintim.link/whatsapp/9c5cef94-21f1-4360-ab48-c72f13344334/2b58d3a7-e86c-4837-8096-1a3e9edc456b";
 const GOOGLE_REVIEWS = "https://share.google/1phk8kyYl4jfbbDd5";
 
-const waMes = (mes: string) =>
-  `https://wa.me/5511971872937?text=${encodeURIComponent(
-    `Olá, Xuxuzinho! Quero um bolo para o ${mes} do meu bebê 🎂`,
-  )}`;
+const waMes = (_mes: string) =>
+  "https://tintim.link/whatsapp/9c5cef94-21f1-4360-ab48-c72f13344334/2b58d3a7-e86c-4837-8096-1a3e9edc456b";
 
 export const Route = createFileRoute("/")({
   component: Index,
