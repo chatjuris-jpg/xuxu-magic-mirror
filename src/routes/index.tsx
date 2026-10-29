@@ -1028,6 +1028,46 @@ function Index() {
     );
   };
 
+  // Força todos os links externos (WhatsApp, Instagram, Maps, Corporativo) a abrirem em nova aba,
+  // mesmo que algum script de terceiros (ex.: tags de marketing) tente abrir na mesma página.
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const anchor = (e.target as HTMLElement | null)?.closest?.("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href") || "";
+      if (!/^https?:\/\//i.test(href)) return;
+      try {
+        if (new URL(href).origin === window.location.origin) return;
+      } catch {
+        return;
+      }
+      if (anchor.dataset["forcedBlank"] === "1") return;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      const win = window.open(href, "_blank");
+      if (win) {
+        try {
+          win.opener = null;
+        } catch {
+          /* ignore */
+        }
+        return;
+      }
+      // Pop-up bloqueado: tenta novamente via link temporário com target _blank
+      const a = document.createElement("a");
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.dataset["forcedBlank"] = "1";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    };
+    window.addEventListener("click", handleClick, true);
+    return () => window.removeEventListener("click", handleClick, true);
+  }, []);
+
   useEffect(() => {
     if (!lightbox) return;
     const handleKey = (e: KeyboardEvent) => {
