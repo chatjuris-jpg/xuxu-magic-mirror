@@ -1137,7 +1137,7 @@ function Index() {
                 mesversário
               </span>
               <h1 className="mt-6 text-[2.6rem] leading-[1.02] font-bold tracking-tight md:text-[4rem]">
-                A Cada momento do seu bebê merece ser celebrado como uma{" "}
+                Cada momento do seu bebê merece ser celebrado como uma{" "}
                 <span className="relative inline-block">
                   <span className="font-display relative z-10 text-plum">
                     grande conquista
