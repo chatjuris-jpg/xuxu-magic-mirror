@@ -1042,7 +1042,7 @@ function Index() {
       } catch {
         return;
       }
-      if (anchor.dataset.forcedBlank === "1") return;
+      if (anchor.dataset["forcedBlank"] === "1") return;
       e.preventDefault();
       e.stopImmediatePropagation();
       const win = window.open(href, "_blank");
@@ -1059,7 +1059,7 @@ function Index() {
       a.href = href;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      a.dataset.forcedBlank = "1";
+      a.dataset["forcedBlank"] = "1";
       document.body.appendChild(a);
       a.click();
       a.remove();
